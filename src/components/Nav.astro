@@ -1,0 +1,33 @@
+---
+// src/components/Nav.astro
+const base = import.meta.env.BASE_URL;
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="mb-24 bg-brand-dark rounded-xl">
+  <ul class="flex gap-12 justify-center text-4xl py-6">
+    <li>
+      <a href={`${base}`} class="hover:text-primary transition-colors text-brand-white {currentPath === '/' ? 'font-bold' : ''}">
+        ArcasHH
+      </a>
+    </li>
+
+    <li>
+      <a href={`${base}dev`} class="hover:text-primary transition-colors text-brand-white {currentPath === '/dev' ? 'font-bold' : ''}">
+        Games
+      </a>
+    </li>
+
+    <li>
+      <a href={`${base}art`} class="hover:text-primary transition-colors text-brand-white {currentPath === '/art' ? 'font-bold' : ''}">
+        Art
+      </a>
+    </li>
+
+    <li>
+      <a href={`${base}about`} class="hover:text-primary transition-colors text-brand-white {currentPath === '/about' ? 'font-bold' : ''}">
+        Contacts
+      </a>
+    </li>
+  </ul>
+</nav>

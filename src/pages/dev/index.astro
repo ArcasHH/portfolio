@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+
+// Данные проектов (замените на свои)
+const projects = [
+  {
+    title: 'AceAge',
+    tech: 'Deck Building, Strategy',
+    description: 'Forge your deck. Conquer the wilds',
+    gifUrl: '/images/AceAge.png',
+    github: 'https://github.com/ваш-аккаунт/dungeon',
+    demo: 'https://clinicallysleepy.itch.io/ace-age'
+  },
+  {
+    title: 'Платформер Shadow Fox',
+    tech: 'Godot, GDScript, Pixel Art',
+    description: 'Физика, покадровая анимация, кастомный редактор уровней',
+    gifUrl: '/images/shadowfox.gif',
+    github: 'https://github.com/ваш-аккаунт/shadowfox'
+  }
+];
+---
+
+<BaseLayout title="Разработка — игровой код и инструменты">
+  <Nav />
+  
+  <div class="mt-6">
+    <h1 class="text-3xl font-bold mb-2">💻 Игровые проекты</h1>
+    <p class="text-gray-600 mb-12">Backend, геймдизайн, оптимизация, шейдеры</p>
+    
+    <div class="grid gap-10">
+      {projects.map(project => (
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-6">
+          <div class="flex flex-col md:flex-row gap-6">
+            {project.gifUrl && (
+              <div class="md:w-1/3">
+                <img src={project.gifUrl} alt={project.title} class="rounded-xl" />
+              </div>
+            )}
+            <div class="md:w-2/3">
+              <h2 class="text-2xl font-semibold">{project.title}</h2>
+              <div class="flex flex-wrap gap-2 mt-2">
+                {project.tech.split(', ').map(tech => (
+                  <span class="bg-gray-100 px-3 py-1 rounded-full text-sm text-gray-700">{tech}</span>
+                ))}
+              </div>
+              <p class="mt-3 text-gray-700">{project.description}</p>
+              <div class="mt-5 flex gap-4">
+                {project.github && <a href={project.github} class="text-indigo-600 hover:underline">📦 GitHub →</a>}
+                {project.demo && <a href={project.demo} class="text-indigo-600 hover:underline">🎮 Play →</a>}
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Yomogi&display=swap');
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply bg-brand-black text-brand-white;
+        font-family: 'Yomogi', cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-xl transition-all;
+    }
+}
+
+@layer utilities {
+    .text-gradient {
+        @apply bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent;
+    }
+}
+
+@theme {
+    /* primary colors UI elements*/
+    --color-primary: #CD5C5C;
+    --color-primary-light: #BC8F8F;
+    --color-primary-dark: #800000;
+    /* secondary colors for text and other */
+    --color-secondary: #E9967A;
+    --color-secondary-light: #FFF8DC; /* white text */
+    --color-secondary-dark: #262121; /* black text */
+    /* brand colors for background elements*/
+    --color-brand-light: #5F9EA0;
+    --color-brand-dark: #2F4F4F;
+    --color-brand-black: #262121;
+    --color-brand-white: #FFF8DC;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
