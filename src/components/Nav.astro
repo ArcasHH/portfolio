@@ -1,33 +1,59 @@
 ---
 // src/components/Nav.astro
+import { t, getLocalizedUrl } from '../i18n';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+
 const base = import.meta.env.BASE_URL;
 const currentPath = Astro.url.pathname;
+
+const currentLang = currentPath.includes('/en/') ? 'en' : 'ru';
+
 ---
 
 <nav class="mb-24 bg-brand-dark rounded-xl">
-  <ul class="flex flex-wrap gap-4 md:gap-12 justify-center text-2xl md:text-4xl py-4 md:py-6 px-4">
-    <li>
-      <a href={`${base}`} class="hover:text-primary transition-colors text-brand-white whitespace-nowrap {currentPath === '/' ? 'font-bold' : ''}">
-        ArcasHH
-      </a>
-    </li>
+  <div class="relative flex items-center justify-between py-4 md:py-6 px-4">
+    <div class="w-20 md:w-32"></div>
+    
+    <ul class="flex flex-wrap gap-4 md:gap-12 justify-center text-2xl md:text-4xl flex-1">
+      <li>
+        <a 
+          href={getLocalizedUrl('/', currentLang, base)} 
+          class="hover:text-primary transition-colors text-brand-white whitespace-nowrap {currentPath.endsWith('/ru/') || currentPath.endsWith('/en/') ? 'font-bold' : ''}"
+        >
+          {t('nav.home', currentLang)}
+        </a>
+      </li>
 
-    <li>
-      <a href={`${base}dev`} class="hover:text-primary transition-colors text-brand-white whitespace-nowrap {currentPath === '/dev' ? 'font-bold' : ''}">
-        Games
-      </a>
-    </li>
+      <li>
+        <a 
+          href={getLocalizedUrl('/dev', currentLang, base)} 
+          class="hover:text-primary transition-colors text-brand-white whitespace-nowrap {currentPath.includes('/dev') ? 'font-bold' : ''}"
+        >
+          {t('nav.games', currentLang)}
+        </a>
+      </li>
 
-    <li>
-      <a href={`${base}art`} class="hover:text-primary transition-colors text-brand-white whitespace-nowrap {currentPath === '/art' ? 'font-bold' : ''}">
-        Art
-      </a>
-    </li>
+      <li>
+        <a 
+          href={getLocalizedUrl('/art', currentLang, base)} 
+          class="hover:text-primary transition-colors text-brand-white whitespace-nowrap {currentPath.includes('/art') ? 'font-bold' : ''}"
+        >
+          {t('nav.art', currentLang)}
+        </a>
+      </li>
 
-    <li>
-      <a href={`${base}about`} class="hover:text-primary transition-colors text-brand-white whitespace-nowrap {currentPath === '/about' ? 'font-bold' : ''}">
-        Contacts
-      </a>
-    </li>
-  </ul>
+      <li>
+        <a 
+          href={getLocalizedUrl('/about', currentLang, base)} 
+          class="hover:text-primary transition-colors text-brand-white whitespace-nowrap {currentPath.includes('/about') ? 'font-bold' : ''}"
+        >
+          {t('nav.contacts', currentLang)}
+        </a>
+      </li>
+    </ul>
+
+    <div class="w-20 md:w-32 flex justify-end">
+      <LanguageSwitcher currentLang={currentLang} />
+    </div>
+  </div>
 </nav>

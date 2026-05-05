@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Yomogi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 @import "tailwindcss";
 
 @layer base {
     body {
         @apply bg-brand-black text-brand-white;
-        font-family: 'Yomogi', cursive;
+        font-family: 'Neucha', cursive;
         font-weight: 400;
         font-style: normal;
     }
+
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Neucha', sans-serif;
         font-weight: 600;
     }
 }
@@ -27,19 +29,13 @@
 }
 
 @theme {
-    /* primary colors UI elements*/
-    --color-primary: #CD5C5C;
-    --color-primary-light: #BC8F8F;
-    --color-primary-dark: #800000;
-    /* secondary colors for text and other */
-    --color-secondary: #E9967A;
-    --color-secondary-light: #FFF8DC; /* white text */
-    --color-secondary-dark: #262121; /* black text */
+    /* primary colors UI elements, refs*/
+    --color-primary: #CD5C5C; /* red */
     /* brand colors for background elements*/
-    --color-brand-light: #5F9EA0;
-    --color-brand-dark: #2F4F4F;
-    --color-brand-black: #262121;
-    --color-brand-white: #FFF8DC;
+    --color-brand-light: #5F9EA0; /* light blue */
+    --color-brand-dark: #2F4F4F; /* dark blue */
+    --color-brand-black: #151b1c; /* dark grey */
+    --color-brand-white: #FFF8DC; /* white */
 }
 
 .font-inter {

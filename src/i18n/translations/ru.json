@@ -1,0 +1,20 @@
+{
+  "nav.home": "ArcasHH",
+  "nav.games": "Игры",
+  "nav.art": "Искусство",
+  "nav.contacts": "Контакты",
+  "hero.title": "ArcasHH",
+  "hero.subtitle": "Разработчик игр и художник",
+  "hero.games": "Игры",
+  "hero.artworks": "Работы",
+  "hero.about": "Обо мне",
+  "hero.contact": "Связаться со мной: asyaludv@mail.ru",
+  "dev.title": "🎮 Игровые проекты",
+  "dev.subtitle": "Бэкенд, геймдизайн, оптимизация, шейдеры",
+  "dev.github": "📦 GitHub →",
+  "dev.demo": "🎮 Играть →",
+  "art.title": "🎨 Художественные работы",
+  "art.subtitle": "Концепты, окружение, пиксель-арт",
+  "about.title": "Обо мне",
+  "about.text": "Эта страница работает!"
+}

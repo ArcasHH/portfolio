@@ -1,0 +1,31 @@
+---
+const currentPath = Astro.url.pathname;
+const currentLang = currentPath.includes('/en/') ? 'en' : 'ru';
+---
+
+<div class="flex gap-3 items-center">
+  <a
+    href={currentPath.replace('/en/', '/ru/')}
+    class={`
+	px-6 
+	py-2 
+	rounded-lg 
+	text-2xl 
+	font-bold 
+	transition-colors ${currentLang === 'ru' ? 'bg-primary text-brand-dark' : 'bg-brand-dark text-brand-white hover:bg-primary hover:text-brand-white'}`}
+  >
+    RU
+  </a>
+  <a
+    href={currentPath.replace('/ru/', '/en/')}
+    class={`
+	px-6 
+	py-2 
+	rounded-lg 
+	text-2xl 
+	font-bold 
+	transition-colors ${currentLang === 'en' ? 'bg-primary text-brand-dark' : 'bg-brand-dark text-brand-white hover:bg-primary hover:text-brand-white'}`}
+  >
+    EN
+  </a>
+</div>
