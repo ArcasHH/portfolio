@@ -41,3 +41,29 @@
 .font-inter {
     font-family: 'Inter', sans-serif;
 }
+
+.blog-content h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.blog-content {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .blog-content h2 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.25rem;
+        font-weight: 400;
+    }
+
+    .blog-content {
+        font-size: 1rem;
+        margin-bottom: 0.125rem;
+    }
+
+}

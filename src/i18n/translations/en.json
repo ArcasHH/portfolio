@@ -10,11 +10,11 @@
   "hero.about": "About me",
   "hero.contact": "Contact me: asyaludv@mail.ru",
   "dev.title": "Games",
-  "dev.subtitle": "Backend, game design, optimization, shaders",
-  "dev.github": "GitHub →",
-  "dev.demo": "Play →",
+  "dev.subtitle": "Here are the projects that were developed by me. Click on the game if you want to learn more about the project",
+  "dev.github": "GitHub",
+  "dev.demo": "Play",
   "art.title": "Artworks",
-  "art.subtitle": "Concepts, environment, pixel art",
+  "art.subtitle": "Concepts, environment art, pixel art, shaders",
   "about.title": "About Me",
   "about.text": "This page works!"
 }
