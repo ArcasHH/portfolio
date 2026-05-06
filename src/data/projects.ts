@@ -13,7 +13,8 @@ export const projects = [
     aboutRu: 'Небольшая карточная игра на гексагональном поле с декбилдингом. Стройте своё королевство, следите за лояльностью жителей и главное - узнайте зачем вы здесь',
     gifUrl: `${base}images/AceAge.png`,
     github: 'https://github.com/PureshkaGames/AceAge',
-    itch: 'https://clinicallysleepy.itch.io/ace-age'
+    itch: 'https://clinicallysleepy.itch.io/ace-age',
+    myindie: ''
   },
   {
     title: 'GutsOut',
@@ -26,7 +27,8 @@ export const projects = [
     aboutRu: 'Простенький пазл, где в роли оккультного доктора будем лечить недуги пациентов подменой органов. Основной геймплей сосредоточен на балансировке параметров',
     gifUrl: `${base}images/GutsOut.png`,
     github: 'https://github.com/ArcasHH/GutsOut',
-    itch: 'https://arcashh.itch.io/gutsout?secret=h0smEhHgy6gxjRCck94dfUcSI'
+    itch: 'https://arcashh.itch.io/gutsout?secret=h0smEhHgy6gxjRCck94dfUcSI',
+    myindie: 'https://myindie.ru/games/game/gutsout'
   },
   {
     title: 'RunPunzel',
@@ -39,7 +41,8 @@ export const projects = [
     aboutRu: '2D пространственная головоломка с механикой записывания перемещения игрока. Игра содержит несколько уровней разбитые по сложности',
     gifUrl: `${base}images/RunPunzel.png`,
     github: 'https://github.com/ArcasHH/RunPunzel',
-    itch: 'https://arcashh.itch.io/runpunzel'
+    itch: 'https://arcashh.itch.io/runpunzel',
+    myindie: ''
   },
   {
     title: 'TangleJump',
@@ -52,6 +55,7 @@ export const projects = [
     aboutRu: 'Короткий платформер с подменой управления: инвертированноле управление, отрицательная гравитация, зеркальное отражение локаций',
     gifUrl: `${base}images/TangleJump.png`,
     github: '',
-    itch: 'https://arcashh.itch.io/tangle-jump'
+    itch: 'https://arcashh.itch.io/tangle-jump',
+    myindie: ''
   },
 ];
