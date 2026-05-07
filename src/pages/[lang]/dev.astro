@@ -18,31 +18,60 @@ const { lang } = Astro.params;
 const currentLang = lang;
 const base = import.meta.env.BASE_URL;
 
+const allTechs = ['2D', 'Jam'];
+
 const getProjectData = (project: typeof projects[0]) => {
-  const tech = currentLang === 'en' ? project.techEn : project.techRu;
   const description = currentLang === 'en' ? project.descriptionEn : project.descriptionRu;
   const about = currentLang === 'en' ? project.aboutEn : project.aboutRu;
-  return { tech, description, about };
+  return { description, about };
 };
 ---
 
 <BaseLayout title={t('dev.title', currentLang)}>
   <div class="mt-6">
 
-    <h1 class="text-4xl md:text-8xl font-bold mb-2 text-brand-white">
+    <h1 class="text-4xl md:text-8xl font-bold mb-12 text-brand-white">
       {t('dev.title', currentLang)}
     </h1>
 
     <p class="text-primary mb-12 text-2xl md:text-3xl">
       {t('dev.subtitle', currentLang)}
     </p>
-    
-    <div class="grid gap-10">
-      {projects.map(project => {
-        const { tech, description, about } = getProjectData(project);
-        return (
-          <div class="bg-brand-dark rounded-2xl shadow-md hover:shadow-xl transition-all p-6">
 
+    <!-- Фильтр технологий -->
+    <div class="mb-10 flex flex-wrap items-center gap-4">
+      <p class="text-brand-white text-2xl md:text-3xl font-semibold">
+        {currentLang === 'ru' ? 'Фильтр:' : 'Filter:'}
+      </p>
+      <div class="flex flex-wrap gap-3" id="filter-buttons">
+        <button 
+          id="filter-all"
+          class="filter-btn px-5 py-2 rounded-full bg-primary text-brand-white text-lg md:text-xl transition-all"
+          data-tech="all"
+        >
+          {currentLang === 'ru' ? 'Все' : 'All'}
+        </button>
+        {allTechs.map(tech => (
+          <button 
+            key={tech}
+            class="filter-btn px-5 py-2 rounded-full bg-brand-light hover:bg-primary text-brand-white text-lg md:text-xl transition-all"
+            data-tech={tech}
+          >
+            {tech}
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <!-- Контейнер проектов -->
+    <div id="projects-container" class="grid gap-10">
+      {projects.map(project => {
+        const { description, about } = getProjectData(project);
+        return (
+          <div 
+            class="project-card bg-brand-dark rounded-2xl shadow-md hover:shadow-xl transition-all p-6" 
+            data-tech={project.tech.join(',')}
+          >
             <div class="flex flex-col md:flex-row gap-6">
               {project.gifUrl && (
                 <div class="md:w-1/3">
@@ -52,66 +81,116 @@ const getProjectData = (project: typeof projects[0]) => {
 
               <div class="md:w-2/3">
                 <h2 class="text-4xl font-semibold text-brand-white">
-		  {project.title}
-		</h2>
+                  {project.title}
+                </h2>
 
                 <div class="flex flex-wrap gap-2 mt-2">
-                  {tech.map(techItem => (
+                  {project.tech.map(techItem => (
                     <span class="bg-brand-light px-3 py-1 rounded-full text-lg md:text-xl text-brand-white">{techItem}</span>
                   ))}
                 </div>
 
                 <p class="mt-3 text-2xl md:text-4xl text-brand-white">
-		  {description}
-		</p>
+                  {description}
+                </p>
 
-		<p class="mt-3 text-xl md:text-2xl text-brand-light">
-		  {about}
-		</p>
-
-	      </div>
-
+                <p class="mt-3 text-xl md:text-2xl text-brand-light">
+                  {about}
+                </p>
+              </div>
 
               <div class="mt-5 flex flex-col items-center gap-4">
+                {project.github && (
+                  <a href={project.github} 
+                    class={`${buttonClass} bg-brand-black hover:bg-brand-black/80 text-brand-dark`}>
+                    <Icon name="mdi:github" class="w-6 h-6" />
+                    GitHub
+                  </a>
+                )}
 
-  		{project.github && (
-    		<a href={project.github} 
-			class={`${buttonClass} bg-brand-black hover:bg-brand-black/80 text-brand-dark`}>
-   		   <Icon name="mdi:github" class="w-6 h-6" />
-   		   GitHub
-   		 </a>
- 		 )}
+                {project.itch && (
+                  <a href={project.itch} 
+                    class={`${buttonClass} bg-primary hover:bg-primary/80 text-brand-dark`}>
+                    <Icon name="simple-icons:itchdotio" class="w-6 h-6" />
+                    Play on itch.io
+                  </a>
+                )}
 
- 		 {project.itch && (
- 		   <a href={project.itch} 
-			class={`${buttonClass} bg-primary hover:bg-primary/80 text-brand-dark`}>
-  		    <Icon name="simple-icons:itchdotio" class="w-6 h-6" />
-   		    Play on itch.io
-   		   </a>
-  		)}
+                {project.myindie && (
+                  <a href={project.myindie} 
+                    class={`${buttonClass} bg-primary-violet hover:bg-primary-violet/80 text-brand-dark`}>
+                    <img src={`${base}images/logo_myindie.png`} alt="MyIndie" class="w-6 h-6 object-contain" />
+                    Play On MyIndie
+                  </a>
+                )}
 
-		{project.myindie && (
-		  <a href={project.myindie} 
-		     class={`${buttonClass} bg-[#A31CF1] hover:bg-[#A31CF1]/80 text-brand-dark`}>
- 		   <img src={`${base}images/logo_myindie.png`} alt="Blog icon" class="w-6 h-6 object-contain" />
- 		   Play On MyIndie
- 		 </a>
-		)}
-
-		{project.slug && (
-  		  <a href={`${base}${currentLang}/blog/${project.slug}`} 
-			class={`${buttonClass} bg-brand-light hover:bg-brand-light/80 text-brand-dark`}>
-  		    <Icon name="mdi:book-open-page-variant" class="w-6 h-6" />
-   		   DevBlog
-   		 </a>
- 		)}
-
-	      </div>
-
+                {project.slug && (
+                  <a href={`${base}${currentLang}/blog/${project.slug}`} 
+                    class={`${buttonClass} bg-brand-light hover:bg-brand-light/80 text-brand-dark`}>
+                    <Icon name="mdi:book-open-page-variant" class="w-6 h-6" />
+                    Learn more
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         );
       })}
     </div>
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('#filter-buttons .filter-btn');
+      const projectCards = document.querySelectorAll('#projects-container .project-card');
+      
+      let activeTech = 'all';
+
+      function updateFilter(tech) {
+        // Фильтруем проекты
+        if (tech === 'all') {
+          projectCards.forEach(card => {
+            card.style.display = '';
+          });
+        } else {
+          projectCards.forEach(card => {
+            const cardTechs = card.getAttribute('data-tech').split(',');
+            if (cardTechs.includes(tech)) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        }
+        
+        // Обновляем стили кнопок
+        filterBtns.forEach(btn => {
+          const btnTech = btn.getAttribute('data-tech');
+          if (btnTech === tech) {
+            btn.classList.remove('bg-brand-light');
+            btn.classList.add('bg-primary');
+          } else {
+            btn.classList.remove('bg-primary');
+            btn.classList.add('bg-brand-light');
+          }
+        });
+      }
+
+      // Добавляем обработчики на кнопки
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const tech = btn.getAttribute('data-tech');
+          
+          // Если нажата уже активная кнопка - сбрасываем фильтр
+          if (activeTech === tech) {
+            activeTech = 'all';
+            updateFilter('all');
+          } else {
+            activeTech = tech;
+            updateFilter(tech);
+          }
+        });
+      });
+    });
+  </script>
 </BaseLayout>
