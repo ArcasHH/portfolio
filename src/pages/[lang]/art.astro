@@ -20,13 +20,16 @@ const artworks = [
     titleRu: 'Девочка', 
     categoryEn: 'Concept', 
     categoryRu: 'Концепт', 
-    src: `${base}images/girl.png`
+    type: 'video',
+    src: `${base}videos/Girl.webm`,
+    poster: `${base}images/girl-poster.jpg`  // постер для видео (опционально)
   },
   { 
     titleEn: 'Unicorn', 
     titleRu: 'Единорог', 
     categoryEn: 'Character', 
     categoryRu: 'Персонаж', 
+    type: 'image',
     src: `${base}images/unicorn.jpg`
   },
 ];
@@ -55,7 +58,23 @@ const getArtworkData = (art: typeof artworks[0]) => {
         return (
           <div class="group cursor-pointer">
             <div class="bg-brand-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all">
-              <img src={art.src} alt={title} class="w-full h-64 object-cover group-hover:scale-105 transition-transform" />
+              {art.type === 'video' ? (
+                <video 
+                  src={art.src} 
+                  poster={art.poster}
+                  autoplay 
+                  loop 
+                  muted 
+                  playsinline
+                  class="w-full h-64 object-cover group-hover:scale-105 transition-transform"
+                />
+              ) : (
+                <img 
+                  src={art.src} 
+                  alt={title} 
+                  class="w-full h-64 object-cover group-hover:scale-105 transition-transform" 
+                />
+              )}
               <div class="p-4">
                 <span class="text-4xl text-primary font-semibold">{category}</span>
                 <h3 class="font-semibold text-2xl mt-1 text-brand-white">{title}</h3>
