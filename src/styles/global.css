@@ -132,3 +132,35 @@
         padding: 0 1rem 1rem;
     }
 }
+
+/* Пиксельная анимация - сетка */
+.animation-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.animation-item {
+    text-align: center;
+    background: var(--color-brand-dark);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.animation-item span {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--color-brand-white);
+    opacity: 0.8;
+}
+
+/* Пиксельная анимация - чёткие пиксели */
+.pixel-art {
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}

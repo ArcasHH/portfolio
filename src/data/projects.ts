@@ -36,7 +36,7 @@ export const projects = [
     descriptionRu: 'Она устала ждать... Повторяй, пока не сбежишь',
     aboutEn: 'A 2D spatial puzzle game with the mechanics of recording the players movement. Сontains several levels divided by difficulty',
     aboutRu: '2D пространственная головоломка с механикой записывания перемещения игрока. Игра содержит несколько уровней разбитые по сложности',
-    gifUrl: `${base}images/runpunzel/RunPunzel.png`,
+    gifUrl: `${base}images/runpunzel/RunPunzel.webp`,
     github: 'https://github.com/ArcasHH/RunPunzel',
     itch: 'https://arcashh.itch.io/runpunzel',
     myindie: ''
@@ -49,7 +49,7 @@ export const projects = [
     descriptionRu: 'Сможешь ли адаптироваться к вечно изменяющемуся управлению и пройти все уровни?',
     aboutEn: 'Short platformer with control substitution: inverted controls, negative gravity, mirroring locations',
     aboutRu: 'Короткий платформер с подменой управления: инвертированноле управление, отрицательная гравитация, зеркальное отражение локаций',
-    gifUrl: `${base}images/tanglejump/TangleJump.png`,
+    gifUrl: `${base}images/tanglejump/TangleJump.webp`,
     github: '',
     itch: 'https://arcashh.itch.io/tangle-jump',
     myindie: ''
