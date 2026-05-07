@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Yomogi&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Yomogi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 @import "tailwindcss";
 
@@ -36,34 +36,99 @@
     --color-brand-dark: #2F4F4F; /* dark blue */
     --color-brand-black: #151b1c; /* dark grey */
     --color-brand-white: #FFF8DC; /* white */
+    /* additional colors*/
+    --color-primary-violet: #815fa0;
 }
 
 .font-inter {
     font-family: 'Inter', sans-serif;
 }
 
-.blog-content h2 {
-    font-size: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-}
 .blog-content {
     font-size: 1.5rem;
-    margin-bottom: 0.25rem;
+}
+
+.blog-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 2rem 0 0.5rem;
+}
+
+.blog-content details {
+    margin: 1.5rem 0;
+    background: var(--color-brand-dark);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.blog-content summary {
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-brand-white);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.blog-content summary:hover {
+    background: var(--color-brand-light);
+}
+
+.blog-content summary::-webkit-details-marker {
+    display: none;
+}
+
+.blog-content .arrow {
+    transition: transform 0.3s;
+}
+
+.blog-content .arrow::before {
+    content: "▼";
+}
+
+.blog-content details[open] .arrow {
+    transform: rotate(180deg);
+}
+
+.blog-content .dev-content {
+    padding: 0 1.5rem 1.5rem;
+    border-top: 1px solid var(--color-brand-light);
+}
+
+.blog-content li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.blog-content li::before {
+    content: " ● ";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
 }
 
 @media (max-width: 768px) {
-    .blog-content h2 {
-        font-size: 1.5rem;
-        margin-top: 1.5rem;
-        margin-bottom: 0.25rem;
-        font-weight: 400;
-    }
-
     .blog-content {
         font-size: 1rem;
-        margin-bottom: 0.125rem;
     }
 
+    .blog-content h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 1.5rem 0 0.25rem;
+    }
+
+    .blog-content summary {
+        font-size: 1.2rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .blog-content .dev-content {
+        padding: 0 1rem 1rem;
+    }
 }
