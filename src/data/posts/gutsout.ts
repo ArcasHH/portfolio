@@ -103,7 +103,7 @@ export const gutsoutPost: Post = {
         <li>There is an inventory buffer for easier organ rearrangement. You can also set aside organs for other patients</li>
         <li>Each organ has values for three parameters: mind, soul, body. Values can be negative. An organ's rarity determines its value expressed in these parameters</li>
 	<li>Each organ has a rarity type: cursed, bad, normal, good, rare, epic, legendary. Rarity is displayed in the game by color</li>
-	
+
  	 <div style="display: flex; align-items: center; gap: 8px; margin: 12px 0;">
  	   <span style="width: 20px; height: 20px; background-color: #800000; border-radius: 50%;"></span>
  	   <span>←</span>
@@ -119,7 +119,6 @@ export const gutsoutPost: Post = {
  	   <span>→</span>
 	    <span style="width: 20px; height: 20px; background-color: #FFA500; border-radius: 50%;"></span>
 	  </div>
-	  
         <li>There are 3 patients, each has parameter requirements (mind, soul, body). Current values are calculated as the sum of all organs.</li>
         <li>The goal is to rearrange organs to satisfy as many requirements as possible at once.</li>
         <li>When at least one requirement is satisfied, you can end the day and all those with satisfied requirements leave. New patients appear in their place with new organs.</li>
@@ -255,8 +254,10 @@ export const gutsoutPost: Post = {
 	     <li>Есть инвентарь-буффер для более удобного переставления органов. И можно откладывать органы для других пациентов</li>
 	     <li>Каждый орган имеет значения трех параметров: mind, soul, body. Значения могут быть и отрицательными. Редкость органа определяет его ценность, выраженную в значениях этого параметра</li>
 	     <li>Каждый орган имеет редкость-тип: проклятый, плохой, обычный, хороший, редкий, эпический, легендарный. Редкость отображена в игре цветом</li>
+
+	       <li>
    		 <div style="display: flex; align-items: center; gap: 8px; margin: 12px 0;">
- 		      <span style="width: 20px; height: 20px; background-color: #800000; border-radius: 50%;"></span>
+ 		     <span style="width: 20px; height: 20px; background-color: #800000; border-radius: 50%;"></span>
 		      <span>←</span>
 		      <span style="width: 20px; height: 20px; background-color: #F08080; border-radius: 50%;"></span>
 		      <span>←</span>
@@ -270,6 +271,7 @@ export const gutsoutPost: Post = {
    		      <span>→</span>
   		      <span style="width: 20px; height: 20px; background-color: #FFA500; border-radius: 50%;"></span>
  		  </div>
+
 	     <li>Есть 3 пациента и у каждого есть запрос параметров (mind, soul, body). Текущие значения вычисляются суммой по всем органам.</li>
  	     <li>Цель - переставлять органы так, чтобы как удовлетворить как можно больше запросов за раз.</li>
 	     <li>При удовлетворении хотя бы одного запроса можно закончить день и все, у кого запросы удовлетворены, уходят. На их месте появляются новые пациенты с новыми органами.</li>
