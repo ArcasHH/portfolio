@@ -29,7 +29,7 @@ export const artworks: Artwork[] = [
     titleRu: 'Единорог', 
     descriptionEn: 'Unicorn concept for a dark fantasy', 
     descriptionRu: 'Концепт единорога для мрачного фентези',
-    tags: ['Concept', 'DigitalArt'],
+    tags: ['Concept', 'DigitalArt', 'Photoshop'],
     src: `${base}images/concepts/Unicorn_preview.webp`,
     type: 'image'
   },
