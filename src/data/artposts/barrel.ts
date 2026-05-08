@@ -3,7 +3,7 @@ import type { ArtPost } from './index';
 
 const base = import.meta.env.BASE_URL;
 
-export const unicornPost: ArtPost = {
+export const barrelPost: ArtPost = {
   slug: 'barrel',
   title: '3D barrel model',
   titleRu: '3D модель бочки',

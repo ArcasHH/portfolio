@@ -9,15 +9,14 @@ export interface ArtPost {
   contentRu: string;
   image: string;
   date: string;
-  category: string;
-  categoryRu: string;
 }
 
-// Импорты постов будут здесь
 import { girlPost } from './girl';
+import { barrelPost } from './barrel'; 
 import { unicornPost } from './unicorn';
 
 export const artPosts: ArtPost[] = [
   girlPost,
+  barrelPost,
   unicornPost,
 ];
