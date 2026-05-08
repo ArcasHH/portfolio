@@ -37,5 +37,4 @@ export const girlPost: ArtPost = {
   `,
   image: `${base}videos/Girl2.webp`,
   date: '2026-01-15',
-  category: '3D',
 };

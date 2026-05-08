@@ -37,5 +37,4 @@ export const unicornPost: ArtPost = {
   `,
   image: `${base}images/unicorn.jpg`,
   date: '2021-03-10',
-  category: 'Concept',
 };

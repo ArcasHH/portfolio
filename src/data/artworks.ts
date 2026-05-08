@@ -2,10 +2,11 @@
 const base = import.meta.env.BASE_URL;
 
 export interface Artwork {
+  slug: string;
   titleEn: string;
   titleRu: string;
-  categoryEn: string;
-  categoryRu: string;
+  descriptionEn: string;
+  descriptionRu: string;
   tags: string[];
   src: string;
   type?: 'image' | 'video';
@@ -13,19 +14,21 @@ export interface Artwork {
 
 export const artworks: Artwork[] = [
   { 
+    slug: 'girl',
     titleEn: 'Girl', 
     titleRu: 'Девочка', 
-    categoryEn: 'Animation', 
-    categoryRu: 'Анимация',
+    descriptionEn: 'Animation in Blender followed by rendering in SpriteSheet', 
+    descriptionRu: 'Анимация в Blender с последующим рендером в SpriteSheet',
     tags: ['3D', 'Animation', 'Blender', 'PixelArt'],
     src: `${base}videos/Girl.webp`,
     type: 'image'
   },
   { 
+    slug: 'unicorn',
     titleEn: 'Unicorn', 
     titleRu: 'Единорог', 
-    categoryEn: 'Concept', 
-    categoryRu: 'Концепт',
+    descriptionEn: 'Unicorn concept for a dark fantasy', 
+    descriptionRu: 'Концепт единорога для мрачного фентези',
     tags: ['Concept', 'DigitalArt'],
     src: `${base}images/unicorn.jpg`,
     type: 'image'
