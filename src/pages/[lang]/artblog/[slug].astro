@@ -1,0 +1,79 @@
+---
+// src/pages/[lang]/artblog/[slug].astro
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { artPosts } from '../../../data/artposts';
+import { Icon } from 'astro-icon/components';
+
+export function getStaticPaths() {
+  const languages = ['ru', 'en'];
+  const paths = [];
+
+  for (const lang of languages) {
+    for (const post of artPosts) {
+      paths.push({
+        params: { lang, slug: post.slug }
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { lang, slug } = Astro.params;
+const base = import.meta.env.BASE_URL;
+
+const post = artPosts.find(p => p.slug === slug);
+
+if (!post) {
+  return Astro.redirect(`${base}${lang}/404`);
+}
+
+const title = lang === 'ru' ? post.titleRu : post.title;
+const description = lang === 'ru' ? post.descriptionRu : post.description;
+const content = lang === 'ru' ? post.contentRu : post.content;
+---
+
+<BaseLayout title={title}>
+  <div class="max-w-4xl mx-auto mt-4">
+    <!-- Кнопка назад (ведёт на страницу артов) -->
+    <a href={`${base}${lang}/art`} class="inline-flex items-center gap-2 text-2xl text-primary hover:text-primary/80 mb-6">
+      <Icon name="mdi:arrow-left" class="w-5 h-5" />
+      {lang === 'ru' ? 'Назад к работам' : 'Back to artworks'}
+    </a>
+
+    <!-- Категория -->
+    <div class="text-primary text-xl mb-2">
+      {post.category}
+    </div>
+
+    <!-- Заголовок -->
+    <h1 class="text-4xl md:text-6xl font-bold text-brand-white mb-4">
+      {title}
+    </h1>
+
+    <!-- Дата -->
+    <time class="text-brand-white/60 text-lg mb-8 block">
+      {post.date}
+    </time>
+
+    <!-- Изображение -->
+    {post.image && (
+      <img src={post.image} alt={title} class="rounded-2xl w-full mb-8" />
+    )}
+
+    <!-- Описание -->
+    <p class="text-2xl text-primary mb-8">
+      {description}
+    </p>
+
+    <!-- Полный контент -->
+    <div class="blog-content prose prose-invert prose-lg max-w-none" set:html={content}>
+    </div>
+
+    <!-- Кнопка назад (внизу) -->
+    <a href={`${base}${lang}/art`} class="inline-flex items-center gap-2 text-2xl text-primary hover:text-primary/80 mb-8 mt-8">
+      <Icon name="mdi:arrow-left" class="w-5 h-5" />
+      {lang === 'ru' ? 'Назад к работам' : 'Back to artworks'}
+    </a>
+  </div>
+</BaseLayout>

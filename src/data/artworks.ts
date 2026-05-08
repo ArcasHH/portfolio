@@ -2,6 +2,7 @@
 const base = import.meta.env.BASE_URL;
 
 export interface Artwork {
+  slug: string;
   titleEn: string;
   titleRu: string;
   categoryEn: string;
@@ -12,6 +13,7 @@ export interface Artwork {
 
 export const artworks: Artwork[] = [
   { 
+    slug: 'girl',
     titleEn: 'Girl', 
     titleRu: 'Девочка', 
     categoryEn: 'Concept', 
@@ -20,6 +22,7 @@ export const artworks: Artwork[] = [
     type: 'image'
   },
   { 
+    slug: 'girl',
     titleEn: 'Unicorn', 
     titleRu: 'Единорог', 
     categoryEn: 'Character', 

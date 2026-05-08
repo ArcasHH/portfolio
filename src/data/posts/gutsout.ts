@@ -293,8 +293,8 @@ export const gutsoutPost: Post = {
 	   <h2>Баланс:</h2>
 	    <p> Таблица органов: <a href="https://docs.google.com/spreadsheets/d/1dnj9-65VL32Ym2bmzhHRjcAtPVQC-wQu/edit?usp=sharing&ouid=106393117432479157531&rtpof=true&sd=true" class="text-primary hover:text-primary/80 underline">Organs balance table</a></p>
 	    <p> Получаемая карма при окончании дня: +10 за одного пациента, +30 за двоих, +50 за троих</p>
-	    <p> Цена ножа: 5 + (3 * day)</p>
-	    <p> Рост потребностей пациентов: </p>
+	    <p> Цена ножа: 5 + (3 * uses)</p>
+	    <p> Рост потребностей пациентов: случайное значение от needs/4 до needs = 4 + 0.08 * day^(3/2)</p>
 	    <p> Шанс выпадения редких органов стремится к равномерному</p>
 	    
 	  </div>
