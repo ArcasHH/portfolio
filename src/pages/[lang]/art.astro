@@ -21,8 +21,8 @@ const artworks = [
     categoryEn: 'Concept', 
     categoryRu: 'Концепт', 
     type: 'video',
-    src: `${base}videos/Girl.webm`,
-    poster: `${base}images/girl-poster.jpg`  // постер для видео (опционально)
+    src: `${base}videos/Girl.webp`,
+    poster: `${base}images/girl-poster.jpg`
   },
   { 
     titleEn: 'Unicorn', 
@@ -58,23 +58,25 @@ const getArtworkData = (art: typeof artworks[0]) => {
         return (
           <div class="group cursor-pointer">
             <div class="bg-brand-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all">
-              {art.type === 'video' ? (
-                <video 
-                  src={art.src} 
-                  poster={art.poster}
-                  autoplay 
-                  loop 
-                  muted 
-                  playsinline
-                  class="w-full h-64 object-cover group-hover:scale-105 transition-transform"
-                />
-              ) : (
-                <img 
-                  src={art.src} 
-                  alt={title} 
-                  class="w-full h-64 object-cover group-hover:scale-105 transition-transform" 
-                />
-              )}
+              <div class="aspect-square w-full overflow-hidden">
+                {art.type === 'video' ? (
+                  <video 
+                    src={art.src} 
+                    poster={art.poster}
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                  />
+                ) : (
+                  <img 
+                    src={art.src} 
+                    alt={title} 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform" 
+                  />
+                )}
+              </div>
               <div class="p-4">
                 <span class="text-4xl text-primary font-semibold">{category}</span>
                 <h3 class="font-semibold text-2xl mt-1 text-brand-white">{title}</h3>
