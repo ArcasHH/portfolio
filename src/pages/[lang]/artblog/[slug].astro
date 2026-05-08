@@ -58,7 +58,13 @@ const content = lang === 'ru' ? post.contentRu : post.content;
 
     <!-- Изображение -->
     {post.image && (
-      <img src={post.image} alt={title} class="rounded-2xl w-full mb-8" />
+      <div class="flex justify-center mb-8">
+        <img 
+          src={post.image} 
+          alt={title} 
+          class="rounded-2xl w-full md:w-2/3 lg:w-1/2" 
+        />
+      </div>
     )}
 
     <!-- Описание -->

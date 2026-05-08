@@ -38,6 +38,47 @@ const getProjectData = (project: typeof projects[0]) => {
       {t('dev.subtitle', currentLang)}
     </p>
 
+
+    <!-- Социальные ссылки -->
+<div class="flex flex-wrap justify-center gap-4 mb-12">
+  <a href="https://github.com/ArcasHH" target="_blank" rel="noopener noreferrer" 
+     class="bg-brand-dark hover:bg-primary text-brand-white px-6 py-3 rounded-xl transition-all flex items-center gap-2">
+    <Icon name="mdi:github" class="w-6 h-6" />
+    GitHub
+  </a>
+  
+  <a href="https://arcashh.itch.io/" target="_blank" rel="noopener noreferrer" 
+     class="bg-brand-dark hover:bg-primary text-brand-white px-6 py-3 rounded-xl transition-all flex items-center gap-2">
+    <Icon name="simple-icons:itchdotio" class="w-6 h-6" />
+    Itch.io
+  </a>
+  
+  <a href="https://gamejolt.com/@ArcasHH" target="_blank" rel="noopener noreferrer" 
+     class="bg-brand-dark hover:bg-primary text-brand-white px-6 py-3 rounded-xl transition-all flex items-center gap-2">
+    <img src={`${base}images/gamejolt-icon.svg`} alt="GameJolt" class="w-5 h-5" />
+    GameJolt
+  </a>
+  
+  <a href="https://www.artstation.com/arcashh" target="_blank" rel="noopener noreferrer" 
+     class="bg-brand-dark hover:bg-primary text-brand-white px-6 py-3 rounded-xl transition-all flex items-center gap-2">
+    <Icon name="simple-icons:artstation" class="w-6 h-6" />
+    ArtStation
+  </a>
+  
+  <a href="https://www.behance.net/arcashh" target="_blank" rel="noopener noreferrer" 
+     class="bg-brand-dark hover:bg-primary text-brand-white px-6 py-3 rounded-xl transition-all flex items-center gap-2">
+    <Icon name="mdi:behance" class="w-6 h-6" />
+    Behance
+  </a>
+  
+  <a href="https://www.linkedin.com/in/arcashh" target="_blank" rel="noopener noreferrer" 
+     class="bg-brand-dark hover:bg-primary text-brand-white px-6 py-3 rounded-xl transition-all flex items-center gap-2">
+    <Icon name="mdi:linkedin" class="w-6 h-6" />
+    LinkedIn
+  </a>
+</div>
+
+
     <!-- Фильтр технологий -->
     <div class="mb-10 flex flex-wrap items-center gap-4">
       <p class="text-brand-white text-2xl md:text-3xl font-semibold">
