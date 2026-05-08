@@ -15,12 +15,22 @@ export interface Artwork {
 export const artworks: Artwork[] = [
   { 
     slug: 'girl',
-    titleEn: 'Girl', 
-    titleRu: 'Девочка', 
+    titleEn: 'Animation Render', 
+    titleRu: 'Рендер анимации', 
     descriptionEn: 'Animation in Blender followed by rendering in SpriteSheet', 
     descriptionRu: 'Анимация в Blender с последующим рендером в SpriteSheet',
     tags: ['3D', 'Animation', 'Blender', 'PixelArt'],
     src: `${base}videos/Girl.webp`,
+    type: 'image'
+  },
+  { 
+    slug: 'barrel',
+    titleEn: 'Barrel', 
+    titleRu: 'Бочка', 
+    descriptionEn: 'Low-poly 3D model with UV scanning, textures, and custom shader', 
+    descriptionRu: 'Low-poly 3D-модель с UV-разверткой, текстурами и кастомным шейдером',
+    tags: ['3D', 'UV', 'Textures', 'Shaders', 'Blender'],
+    src: `${base}videos/Barrel_low.webp`,
     type: 'image'
   },
   { 
