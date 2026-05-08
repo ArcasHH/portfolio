@@ -45,6 +45,6 @@ export const barrelPost: ArtPost = {
       <li>Blender</li>
     </ul>
   `,
-  image: `${base}videos/Barrel.webp`,
+  image: `${base}videos/Barrel_low.webp`,
   date: '2021-03-10',
 };

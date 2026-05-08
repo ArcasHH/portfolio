@@ -10,8 +10,6 @@ export const unicornPost: ArtPost = {
   description: 'Fantasy character illustration',
   descriptionRu: 'Иллюстрация фэнтези персонажа',
   content: `
-    <h2>About this work</h2>
-    <p>This character design was created for a fantasy project.</p>
     
     <h2>Process</h2>
     <p>The artwork focuses on ethereal and magical elements.</p>
@@ -23,8 +21,6 @@ export const unicornPost: ArtPost = {
     </ul>
   `,
   contentRu: `
-    <h2>О работе</h2>
-    <p>Этот дизайн персонажа для фэнтези проекта.</p>
     
     <h2>Инструменты</h2>
     <ul>
