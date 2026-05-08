@@ -149,13 +149,13 @@
     border-radius: 1rem;
 }
 
-    .animation-item span {
-        display: block;
-        margin-top: 0.5rem;
-        font-size: 0.9rem;
-        color: var(--color-brand-white);
-        opacity: 0.8;
-    }
+.animation-item span {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--color-brand-white);
+    opacity: 0.8;
+}
 
 /* Пиксельная анимация - чёткие пиксели */
 .pixel-art {

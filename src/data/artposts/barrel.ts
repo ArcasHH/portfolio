@@ -12,7 +12,14 @@ export const unicornPost: ArtPost = {
   content: `
     <h2>About this work</h2>
     <p>This character design was created for a fantasy project.</p>
-    
+
+    <h2>Frame</h2>
+    <div class="animation-grid">
+      <div class="animation-item">
+        <img src="${base}videos/Barrel_frame.webp" alt="Barrel model" class="pixel-art" width="256" height="256" />
+      </div>
+    </div>
+
     <h2>Process</h2>
     <p>The artwork focuses on ethereal and magical elements.</p>
     
@@ -25,7 +32,14 @@ export const unicornPost: ArtPost = {
   contentRu: `
     <h2>О работе</h2>
     <p>Готовая модель бочки для использования в игровых движках.</p>
-    
+
+    <h2>Сетка</h2>
+    <div class="animation-grid">
+      <div class="animation-item">
+        <img src="${base}videos/Barrel_frame.webp" alt="Barrel model" class="pixel-art" width="512" height="512" />
+      </div>
+    </div>
+
     <h2>Инструменты</h2>
     <ul>
       <li>Blender</li>
