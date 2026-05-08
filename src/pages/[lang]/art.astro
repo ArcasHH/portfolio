@@ -3,6 +3,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { t } from '../../i18n';
 import { artworks } from '../../data/artworks';
+import { Icon } from 'astro-icon/components';
 
 export function getStaticPaths() {
   return [
@@ -35,6 +36,24 @@ const getArtworkData = (art: typeof artworks[0]) => {
     <p class="text-primary mb-8 text-2xl">
       {t('art.subtitle', currentLang)}
     </p>
+    
+    <!-- Социальные ссылки -->
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
+
+      <a href="https://www.artstation.com/arcashh" target="_blank" rel="noopener noreferrer" 
+         class="bg-brand-dark hover:bg-primary text-brand-white px-6 py-3 rounded-xl transition-all flex items-center gap-2">
+        <Icon name="simple-icons:artstation" class="w-6 h-6" />
+        ArtStation
+      </a>
+  
+      <a href="https://www.behance.net/arcashh" target="_blank" rel="noopener noreferrer" 
+         class="bg-brand-dark hover:bg-primary text-brand-white px-6 py-3 rounded-xl transition-all flex items-center gap-2">
+        <Icon name="mdi:behance" class="w-6 h-6" />
+        Behance
+      </a>
+  
+    </div>
+
 
     <!-- Фильтр категорий -->
     <div class="mb-10">
