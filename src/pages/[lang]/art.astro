@@ -2,6 +2,7 @@
 // src/pages/[lang]/art.astro
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { t } from '../../i18n';
+import { artworks } from '../../data/artworks';
 
 export function getStaticPaths() {
   return [
@@ -13,23 +14,6 @@ export function getStaticPaths() {
 const { lang } = Astro.params;
 const currentLang = lang;
 const base = import.meta.env.BASE_URL;
-
-const artworks = [
-  { 
-    titleEn: 'Girl', 
-    titleRu: 'Девочка', 
-    categoryEn: 'Concept', 
-    categoryRu: 'Концепт', 
-    src: `${base}videos/Girl.webp`
-  },
-  { 
-    titleEn: 'Unicorn', 
-    titleRu: 'Единорог', 
-    categoryEn: 'Character', 
-    categoryRu: 'Персонаж', 
-    src: `${base}images/unicorn.jpg`
-  },
-];
 
 const getArtworkData = (art: typeof artworks[0]) => {
   const title = currentLang === 'en' ? art.titleEn : art.titleRu;
@@ -55,7 +39,24 @@ const getArtworkData = (art: typeof artworks[0]) => {
         return (
           <div class="group cursor-pointer">
             <div class="bg-brand-dark rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all">
-              <img src={art.src} alt={title} class="w-full h-64 object-cover group-hover:scale-105 transition-transform" />
+              <div class="aspect-square w-full overflow-hidden">
+                {art.type === 'video' ? (
+                  <video 
+                    src={art.src} 
+                    autoplay 
+                    loop 
+                    muted 
+                    playsinline
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                  />
+                ) : (
+                  <img 
+                    src={art.src} 
+                    alt={title} 
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform" 
+                  />
+                )}
+              </div>
               <div class="p-4">
                 <span class="text-4xl text-primary font-semibold">{category}</span>
                 <h3 class="font-semibold text-2xl mt-1 text-brand-white">{title}</h3>
