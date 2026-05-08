@@ -24,17 +24,13 @@ export const unicornPost: ArtPost = {
   `,
   contentRu: `
     <h2>О работе</h2>
-    <p>Этот дизайн персонажа был создан для фэнтези проекта.</p>
-    
-    <h2>Процесс</h2>
-    <p>Работа фокусируется на воздушных и магических элементах.</p>
+    <p>Этот дизайн персонажа для фэнтези проекта.</p>
     
     <h2>Инструменты</h2>
     <ul>
-      <li>Procreate</li>
       <li>Photoshop</li>
     </ul>
   `,
-  image: `${base}images/unicorn.jpg`,
+  image: `${base}images/concepts/Unicorn.webp`,
   date: '2021-03-10',
 };
