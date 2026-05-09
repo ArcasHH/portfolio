@@ -50,10 +50,17 @@ const getProjectData = (project: typeof projects[0]) => {
   
   <a href="https://gamejolt.com/@ArcasHH" target="_blank" rel="noopener noreferrer" 
      class="bg-brand-dark hover:bg-primary text-brand-white px-6 py-3 rounded-xl transition-all flex items-center gap-2">
-    <img src={`${base}images/gamejolt-icon.svg`} alt="GameJolt" class="w-5 h-5" />
+    <img src={`${base}images/icons/logo_gamejolt.svg`} alt="GameJolt" class="w-5 h-5" />
     GameJolt
   </a>
-  
+
+  <a href="https://myindie.ru/users/user/arcashh" target="_blank" rel="noopener noreferrer" 
+     class="bg-brand-dark hover:bg-primary text-brand-white px-6 py-3 rounded-xl transition-all flex items-center gap-2">
+    <img src={`${base}images/icons/logo_myindie.svg`} alt="GameJolt" class="w-5 h-5" />
+    GameJolt
+  </a>
+ 
+
  </div>
 
 
@@ -138,7 +145,7 @@ const getProjectData = (project: typeof projects[0]) => {
                 {project.myindie && (
                   <a href={project.myindie} 
                     class={`${buttonClass} bg-primary-violet hover:bg-primary-violet/80 text-brand-dark`}>
-                    <img src={`${base}images/logo_myindie.png`} alt="MyIndie" class="w-6 h-6 object-contain" />
+                    <img src={`${base}images/icons/logo_myindie.svg`} alt="MyIndie" class="w-6 h-6 object-contain" />
                     Play on MyIndie
                   </a>
                 )}

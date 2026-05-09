@@ -173,12 +173,11 @@ export const tanglejumpPost: Post = {
     `,
 
 
-    image: `${base}images/gutsout/GutsOut_banner.webp`,
+    image: `${base}images/tanglejump/TangleJump_banner.webp`,
 
     screenshots: [
-        `${base}images/gutsout/screenshots/screenshot1.webp`,
-	    `${base}images/gutsout/screenshots/screenshot2.webp`,
-	    `${base}images/gutsout/screenshots/screenshot3.webp`,
+        `${base}images/tanglejump/screenshots/screenshot1.webp`,
+	`${base}images/tanglejump/screenshots/screenshot2.webp`,
     ],
 
     date: '29 . 04 . 2026',
