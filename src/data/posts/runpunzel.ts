@@ -51,6 +51,34 @@ export const runpunzelPost: Post = {
 
         </div>
       </details>
+
+      <details class="dev-details">
+        <summary class="dev-summary">
+          Art
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
+          <h2>Анимации</h2>
+	      <div class="animation-grid">
+ 	       <div class="animation-item">
+ 	         <img src="${base}images/runpunzel/other/princess_death-Sheet.webp" alt="16x32 animation" class="pixel-art" width="64" height="128" />
+ 	         <span>32×32</span>
+	        </div>
+	        <div class="animation-item">
+ 	         <img src="${base}images/runpunzel/other/princess_fall.webp" alt="16x32 animation" class="pixel-art" width="64" height="128" />
+	          <span>64×64</span>
+ 	       </div>
+ 	       <div class="animation-item">
+ 	         <img src="${base}images/runpunzel/other/princess_idle-Sheet.webp" alt="16x32 animation" class="pixel-art" width="64" height="128" />
+	          <span>128×128</span>
+	       </div>
+           <div class="animation-item">
+ 	         <img src="${base}images/runpunzel/other/princess_run-Sheet.webp" alt="16x32 animation" class="pixel-art" width="64" height="128" />
+	          <span>128×128</span>
+	       </div>
+          </div>
+        </div>
+      </details>
     `,
 
 
@@ -90,9 +118,38 @@ export const runpunzelPost: Post = {
             <a href="https://itch.io/jam/myindie-lvl6/results" class="text-primary hover:text-primary/80 underline">ссылочку</a>
              на результаты.
             </p>
-            
           </ul>
 
+          
+
+        </div>
+      </details>
+
+      <details class="dev-details">
+        <summary class="dev-summary">
+          Art
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
+          <h2>Анимации</h2>
+	      <div class="animation-grid">
+ 	       <div class="animation-item">
+ 	         <img src="${base}images/runpunzel/other/princess_death-Sheet.webp" alt="16x32 animation" class="pixel-art" width="64" height="128" />
+ 	         <span>32×32</span>
+	        </div>
+	        <div class="animation-item">
+ 	         <img src="${base}images/runpunzel/other/princess_fall.webp" alt="16x32 animation" class="pixel-art" width="64" height="128" />
+	          <span>64×64</span>
+ 	       </div>
+ 	       <div class="animation-item">
+ 	         <img src="${base}images/runpunzel/other/princess_idle-Sheet.webp" alt="16x32 animation" class="pixel-art" width="64" height="128" />
+	          <span>128×128</span>
+	       </div>
+           <div class="animation-item">
+ 	         <img src="${base}images/runpunzel/other/princess_run-Sheet.webp" alt="16x32 animation" class="pixel-art" width="64" height="128" />
+	          <span>128×128</span>
+	       </div>
+          </div>
         </div>
       </details>
     `,
