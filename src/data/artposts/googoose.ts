@@ -10,15 +10,7 @@ export const googoosePost: ArtPost = {
   description: 'Working as an artist on a project',
   descriptionRu: 'Работа художником на проекте',
   content: `
-    
-    <h2>Process</h2>
-    <p>The artwork focuses on ethereal and magical elements.</p>
-    
-    <h2>Tools used</h2>
-    <ul>
-      <li>Procreate</li>
-      <li>Photoshop</li>
-    </ul>
+
   `,
   contentRu: `
     
@@ -66,7 +58,62 @@ export const googoosePost: ArtPost = {
      <p>
     В общем, превращаю уровни в приятные глазу локации
     </p>
+
+   <details class="dev-details">
+    <summary class="dev-summary">
+      Туториал - уровень 0 
+      <span class="arrow">▼</span>
+    </summary>
+    <div class="dev-content">
+
+       <details class="dev-details">
+        <summary class="dev-summary">
+          Референсы:
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
+
+          <p>Основной референс - пейзажи Хаяо Миядзаки</p>
+           <img src="/portfolio/images/googoose/tutorial_ref.webp" alt="Основной референс на Туториал" class="rounded-xl my-4" />
+           <p>Домики на холмах вдохновлены Чжанцзяцзе - национальный парк в Китае</p>
+        </div>
+      </details>
+
+      <details class="dev-details">
+        <summary class="dev-summary">
+          Ассеты:
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
+          <p>Текстуры, спрайты и так далее</p>
+        </div>
+      </details>
+
+      <details class="dev-details">
+        <summary class="dev-summary">
+          Оформление:
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
+          <p>Как выглядит уровень и как несколько раскрашенных спрайтов меняют восприятие</p>
+        </div>
+      </details>
+
+
+      <details class="dev-details">
+        <summary class="dev-summary">
+          Результат:
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
+          <p>Гиф ито8гового уровня. Отзывы и впечатления</p>
+        </div>
+      </details>
+
+    </div>
+  </details>
+
   `,
   image: `${base}images/googoose/GooGoose_banner.webp`,
-  date: '2021-03-10',
+  date: '2026-05-10',
 };
