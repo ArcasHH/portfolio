@@ -7,7 +7,7 @@ export const gutsoutPost: Post = {
   slug: 'gutsout',
   title: 'GutsOut - blog',
   titleRu: 'GutsOut - блог',
-  description: 'What went right and wrong during the jam',
+  description: 'A local gamejam game on the theme ""occultism""',
   descriptionRu: 'Джемовый поект на тему "оккультизм"',
 
 
