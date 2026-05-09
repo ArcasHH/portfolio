@@ -82,7 +82,11 @@ export const tanglejumpPost: Post = {
 
       <h2>Results:</h2>
       <ul>
-        <li>Unfortunately, the team didn't manage to produce a stable build on time. This is where I finally understood the value of a working, even if simple, project.</li>
+        <li>
+          Unfortunately, the team didn't manage to create a stable build on time (the good news is that the organizers still gave the game a chance to participate). But I finally understood the value of a working project, even a simple one.
+          <a href="/portfolio/en/artblog/forester/" class="text-primary hover:text-primary/80 underline">Here</a>
+          you can see some of the assets for the game I worked on as an artist.
+        </li>
 
         <li>In my first jam, I somehow managed to participate twice! It might seem inappropriate to take part in the same jam on the side, but in this case, I could only draw on request anyway — and that's exactly what I did.</li>
         <p>
@@ -169,7 +173,11 @@ export const tanglejumpPost: Post = {
 
           <h2>Результат:</h2>
           <ul>
-            <li>К сожалению, у команды не получился стабильный билд в срок (Из приятного - организаторы все же дали игре шанс поучаствовать). Но я окончательно поняла ценность рабочего, пусть и простого проекта.</li>
+            <li>
+              К сожалению, у команды не получился стабильный билд в срок (Из приятного - организаторы все же дали игре шанс поучаствовать). Но я окончательно поняла ценность рабочего, пусть и простого проекта.
+              <a href="/portfolio/ru/artblog/forester/" class="text-primary hover:text-primary/80 underline">Здесь</a>
+              можно посмотреть некоторые ассеты к игре, над которой работала в качестве художника.
+            </li>
             <li>
             В своём первом джеме я умудрилась поучаствовать дважды! Может показаться, что было некрасиво с моей стороны участвовать в том же джеме параллельно, но в данном случае можно было только рисовать по запросу — что я и делала. 
             </li>
