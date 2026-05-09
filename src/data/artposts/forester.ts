@@ -35,8 +35,8 @@ export const foresterPost: ArtPost = {
           src="/portfolio/images/forester/forester_sketches.webp"
           alt="Forester"
           class="rounded-xl my-4"
-          width="512"
-          height="512"
+          width="256"
+          height="256"
         />
     </div>
   </details>

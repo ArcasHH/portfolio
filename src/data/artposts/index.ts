@@ -11,14 +11,18 @@ export interface ArtPost {
   date: string;
 }
 
+import { googoosePost } from './googoose';
 import { girlPost } from './girl';
 import { barrelPost } from './barrel'; 
 import { unicornPost } from './unicorn';
 import { foresterPost } from './forester';
 
+
 export const artPosts: ArtPost[] = [
+    googoosePost,
     girlPost,
     barrelPost,
     unicornPost,
     foresterPost,
+    
 ];

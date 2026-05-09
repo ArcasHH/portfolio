@@ -13,6 +13,16 @@ export interface Artwork {
 }
 
 export const artworks: Artwork[] = [
+    {
+        slug: 'googoose',
+        titleEn: 'Goo-Goose',
+        titleRu: 'Goo-Goose',
+        descriptionEn: 'working as an artist on the game Goo-Goose',
+        descriptionRu: 'Работа художником над игрой Goo-Goose',
+        tags: ['2D', 'Game'],
+        src: `${base}images/googoose/GooGoose.webp`,
+        type: 'image'
+    },
     { 
         slug: 'girl',
         titleEn: 'Animation Render', 
