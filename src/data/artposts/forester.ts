@@ -56,7 +56,7 @@ export const foresterPost: ArtPost = {
       <span class="arrow">▼</span>
     </summary>
     <div class="dev-content">
-      <p>Applying the assets in the game</p>
+      <p>The application of assets. But not all of them - after that, I just drew a sprite of the wall.</p>
       <img src="/portfolio/images/forester/forester_map.webp" alt="Game location" class="rounded-xl my-4" />
     </div>
   </details>
@@ -109,14 +109,15 @@ export const foresterPost: ArtPost = {
       Игровые объекты:
       <span class="arrow">▼</span>
     </summary>
-    <div class="dev-content">
+    <ul>
       <li>Деревья - их можно срубить -> Разделяется на 2 части. Верхняя часть падает, а пенек остается.<li>
       <li>Деревья трех типов: обычные, золотые и алмазные<li>
       <li>Пару кустов с ягодами и грибы<li>
       <li>Спрайт стены<li>
       <li>Ворота - единственный способ сбежать из таинственного леса<li>
+    </ul>
       <img src="/portfolio/images/forester/forester_atlas.webp" alt="Ассеты игры" class="rounded-xl my-4" />
-    </div>
+    
   </details>
 
   <details class="dev-details">
@@ -125,7 +126,7 @@ export const foresterPost: ArtPost = {
       <span class="arrow">▼</span>
     </summary>
     <div class="dev-content">
-      <p>Приминение ассетов</p>
+      <p>Приминение ассетов. Но не всех - после отого как раз и нарисовала спрайт стены</p>
       <img src="/portfolio/images/forester/forester_map.webp" alt="Ассеты игры" class="rounded-xl my-4" />
     </div>
   </details>
@@ -135,13 +136,14 @@ export const foresterPost: ArtPost = {
       Иконки - предметы инвентаря:
       <span class="arrow">▼</span>
     </summary>
-    <div class="dev-content">
+    <ul>
       <li>Топор составной: Для рукояти добываем золотую древесину, а для головки - алмазную.<li>
       <li>Есть компас, который указывает на ближайшее золотое или алмазное дерево<li>
       <li>Ягоды, из которпых крафтятся зелья<li>
       <li>Ключ от ворот<li>
+    </ul>
       <img src="/portfolio/images/forester/forester_icons.webp" alt="Ассеты игры" class="rounded-xl my-4" />
-    </div>
+    
   </details>
 
 
