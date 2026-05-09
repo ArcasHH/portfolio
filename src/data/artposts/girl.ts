@@ -69,7 +69,7 @@ export const girlPost: ArtPost = {
  	     <img src="${base}videos/Girl128.webp" alt="128x128 animation" class="pixel-art" width="128" height="128" />
 	      <span>128×128</span>
 	   </div>
-    </div>
+      </div>
     <h2>Процесс</h2>
     <ul>
       <li>Создание low-poly модели персонажа с ригом и скелетной анимацией</li>

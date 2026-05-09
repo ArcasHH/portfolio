@@ -14,9 +14,11 @@ export interface ArtPost {
 import { girlPost } from './girl';
 import { barrelPost } from './barrel'; 
 import { unicornPost } from './unicorn';
+import { foresterPost } from './forester';
 
 export const artPosts: ArtPost[] = [
-  girlPost,
-  barrelPost,
-  unicornPost,
+    girlPost,
+    barrelPost,
+    unicornPost,
+    foresterPost,
 ];
