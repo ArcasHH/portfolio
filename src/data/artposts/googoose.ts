@@ -113,6 +113,155 @@ export const googoosePost: ArtPost = {
     </div>
   </details>
 
+
+  <details class="dev-details">
+    <summary class="dev-summary">
+      Дикий запад - уровень 1
+      <span class="arrow">▼</span>
+    </summary>
+    <div class="dev-content">
+
+       <details class="dev-details">
+        <summary class="dev-summary">
+          Референсы и палитра:
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
+             <h2>Референсы:</h2>
+                <p>Ну с референсами тут всё понятно</p>
+                <img src="/portfolio/images/googoose/tutorial_ref.webp" alt="Основной референс на Туториал" class="rounded-xl my-4" />
+             <h2>Подбор палитры:</h2>
+                <p>Останговились на более холодных оттенках</p>
+                <img src="/portfolio/images/googoose/tutorial_ref.webp" alt="Основной референс на Туториал" class="rounded-xl my-4" />
+         
+        </div>
+      </details>
+
+      <details class="dev-details">
+        <summary class="dev-summary">
+          Ассеты:
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
+          <p>Текстуры, спрайты и так далее</p>
+        </div>
+      </details>
+
+      <details class="dev-details">
+        <summary class="dev-summary">
+          Оформление:
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
+          <p>Как выглядит уровень и как несколько раскрашенных спрайтов меняют восприятие</p>
+        </div>
+      </details>
+
+
+      <details class="dev-details">
+        <summary class="dev-summary">
+          Результат:
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
+          <p>Гиф ито8гового уровня. Отзывы и впечатления</p>
+        </div>
+      </details>
+
+    </div>
+  </details>
+
+
+
+    <details class="dev-details">
+    <summary class="dev-summary">
+      Дикий запад - уровень 2 (шахты)
+      <span class="arrow">▼</span>
+    </summary>
+    <div class="dev-content">
+
+       <details class="dev-details">
+        <summary class="dev-summary">
+          Референсы и палитра:
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
+             <h2>Референсы:</h2>
+                <p>Ну с референсами тут всё понятно</p>
+                <img src="/portfolio/images/googoose/tutorial_ref.webp" alt="Основной референс на Туториал" class="rounded-xl my-4" />
+             <h2>Подбор палитры:</h2>
+                <p>Останговились на более холодных оттенках</p>
+                <img src="/portfolio/images/googoose/tutorial_ref.webp" alt="Основной референс на Туториал" class="rounded-xl my-4" />
+
+        </div>
+      </details>
+
+      <details class="dev-details">
+        <summary class="dev-summary">
+          Ассеты:
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
+          <p>Текстуры, спрайты и так далее</p>
+        </div>
+      </details>
+
+      <details class="dev-details">
+        <summary class="dev-summary">
+          Оформление:
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
+          <p>Как выглядит уровень и как несколько раскрашенных спрайтов меняют восприятие</p>
+        </div>
+      </details>
+
+
+      <details class="dev-details">
+        <summary class="dev-summary">
+          Результат:
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
+          <p>Гиф ито8гового уровня. Отзывы и впечатления</p>
+        </div>
+      </details>
+
+    </div>
+  </details>
+
+
+    </details>
+
+    <details class="dev-details">
+    <summary class="dev-summary">
+      Другое
+      <span class="arrow">▼</span>
+    </summary>
+    <div class="dev-content">
+
+       <details class="dev-details">
+        <summary class="dev-summary">
+          NPC:
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
+             <h2>Дикий запад:</h2>
+        </div>
+      </details>
+
+      <details class="dev-details">
+        <summary class="dev-summary">
+          Иконки способностей:
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
+             
+        </div>
+      </details>
+
+    </div>
+  </details>
   `,
   image: `${base}images/googoose/GooGoose_banner.webp`,
   date: '2026-05-10',
