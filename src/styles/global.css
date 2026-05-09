@@ -158,11 +158,16 @@
 }
 
 /* Пиксельная анимация - чёткие пиксели */
+/* Пиксельная графика — чёткие края */
 .pixel-art {
-    image-rendering: crisp-edges;
     image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+/* Вариант для контейнера */
+.pixel-perfect {
     image-rendering: pixelated;
-    image-rendering: crisp-edges;
 }
 
 .line-clamp-1 {

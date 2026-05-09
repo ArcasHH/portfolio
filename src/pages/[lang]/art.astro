@@ -117,14 +117,14 @@ const getArtworkData = (art: typeof artworks[0]) => {
                 <span class="text-lg md:text-base text-primary font-semibold">{title}</span>
     
                 <div class="flex flex-wrap gap-1 mt-1">
-                  {art.tags.slice(0, 2).map(tag => (
+                  {art.tags.slice(0, 4).map(tag => (
                     <!-- Теги -->
                     <span class="bg-brand-light/50 px-1 py-0.5 rounded-full text-lg text-brand-white">
                       {tag}
                     </span>
                   ))}
-                  {art.tags.length > 5 && (
-                    <span class="text-xs text-brand-white/50">+{art.tags.length - 2}</span>
+                  {art.tags.length > 4 && (
+                    <span class="text-xs text-brand-white/50">+{art.tags.length - 4}</span>
                   )}
                 </div>
                 
