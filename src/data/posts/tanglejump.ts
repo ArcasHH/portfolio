@@ -16,10 +16,14 @@ export const tanglejumpPost: Post = {
   <p>My first game jam and my first project on Godot Engine.</p>
 
   <p>
-  The game was developed as part of a local Russian game jam. The theme was sensory adaptation. My project is about one of the most unpleasant moments in games — when the rules of physics or controls suddenly change.
-  Although I missed the mark a bit here, since motor adaptation would be more fitting.
-  But in fact, it's incredibly amazing how quickly the brain adapts to changing conditions. We quickly get used to it and stop noticing the inconveniences that initially annoyed us.
-  And I just wanted to make a game where the core mechanic is inverted controls.
+  The game was developed as part of a local Russian game jam.
+  </p>
+  <p>
+  The theme was sensory adaptation. I made a game about inverted controls. The jam theme was about sensory adaptation (even though I missed the mark — this is more about motor adaptation).
+  </p>
+  <p>
+  But it's not about the terminology — it's about the brain's amazing ability to adapt to any twisted conditions.
+  You know that feeling when after playing for a long time, it feels like your mouse is moving the wrong way? Your brain gets annoyed, but then — it adapts. That's what my project is about.
   </p>
 
   <details class="dev-details">
@@ -47,7 +51,7 @@ export const tanglejumpPost: Post = {
       <h2>Day 2 — What to draw?</h2>
       <ul>
         <li>
-        Finally, I was told to draw a side-view character. Two hours later, another person writes and says I'm doing it wrong — they need a top-down view! Fine, I drew what they asked for in Photoshop, layer by layer, so someone else could animate it.
+        Finally, I was told to draw a side-view character. Then it turned out they needed a top-down view! Fine, I drew what they asked for in Photoshop, layer by layer, so someone else could animate it.
         But in the process, they kept discussing the game idea and changing everything drastically. Meanwhile, 1.5 out of 4 days had already passed.
         </li>
         <li>
@@ -59,11 +63,15 @@ export const tanglejumpPost: Post = {
 
       <h2>Day 3 — No sleep!</h2>
       <ul>
-        <li>They kept giving me tasks to draw assets (though not many) and sometimes requested edits.</li>
+        <li>I kept helping the team with art (on their request), and in my free time I worked on my own game.</li>
         <li>I was slowly figuring out the engine. I implemented toggle buttons for controls and gravity.</li>
-        <li>I found a ready-made rope implementation and hooked it into the game. At that point, I decided there would be a ball of yarn that unravels, and you need to reach the finish line without running out of yarn. And that was it — the game was ready!</li>
+        <li>I found a ready-made rope implementation and hooked it into the game. At that point, I decided there would be a ball of yarn that unravels. And that was it — the game was ready!</li>
         <li>I started doing some drawing for my own game.</li>
       </ul>
+      <p>
+        What I ended up with was a platformer where you need to reach the finish line by controlling a ball of yarn. The yarn gradually unravels.
+        If it runs out completely — you lose. The twist is that I added buttons that invert controls and change gravity.
+      </p>
 
       <h2>Day 4 — I overslept everything!</h2>
       <ul>
@@ -74,10 +82,8 @@ export const tanglejumpPost: Post = {
 
       <h2>Results:</h2>
       <ul>
-        <li>The team didn't produce a working build. Well, they did, but it wasn't fully functional — and it was after the deadline.</li>
-        <li>In my first jam, I somehow managed to participate twice! It might seem inappropriate to take part in the same jam on the side, but I could only draw on request anyway — and that's exactly what I did. 
-        (Maybe I could have taken more initiative and drawn art on my own without waiting for approval, but without a shared vision of the game, it was nearly impossible.)</li>
-        <li>To my surprise, my game ended up in the top quarter of the rankings. There weren't many projects overall, but I realized that even an unremarkable, primitive but working project is far better than complex ideas you can't finish or implement in time.</li>
+        <li>Unfortunately, the team didn't manage to produce a stable build on time. This is where I finally understood the value of a working, even if simple, project.</li>
+        <li>In my first jam, I somehow managed to participate twice! It might seem inappropriate to take part in the same jam on the side, but in this case, I could only draw on request anyway — and that's exactly what I did.</li>
       </ul>
     </div>
   </details>
@@ -126,7 +132,7 @@ export const tanglejumpPost: Post = {
           <h2>День 2 — Что рисовать?</h2>
           <ul>
             <li>
-            Наконец-то мне сказали нарисовать персонажа с видом сбоку. Спустя 2 часа пишет другой человек и говорит, что я не то делаю и нужен top-down! Ладно, я нарисовала, что просили, в фотошопе по слоям, чтобы другой человек анимировал.
+            Наконец-то мне сказали нарисовать персонажа с видом сбоку. Потом оказалось, что нужен top-down! Ладно, я нарисовала, что просили, в фотошопе по слоям, чтобы другой человек анимировал.
             Но в процессе они продолжали обсуждать идею игры и кардинально всё менять. А уже 1.5 из 4 дней прошло.
             </li>
             <li>
@@ -138,10 +144,14 @@ export const tanglejumpPost: Post = {
 
           <h2>День 3 — Никакого сна!</h2>
           <ul>
-            <li>Мне периодически накидывали задачи на рисование ассетов (хоть и не особо много) и иногда правки к нарисованному.</li>
+            <li>Я продолжила помогать команде с артами (по их запросам), а в свободное время делала свою игру</li>
             <li>Потихоньку разбиралась с движком. Реализовала кнопки-переключатели управления и гравитации.</li>
-            <li>Нашла готовый ассет с реализацией верёвки и прикрутила к игре. На этом моменте решила, что у меня будет клубок, который разматывается, и нужно дойти до финиша, не размотавшись полностью. В общем, на этом игра всё!</li>
+            <li>Нашла готовый ассет с реализацией верёвки и прикрутила к игре. На этом моменте решила, что у меня будет клубок, который разматывается. В общем, на этом игра всё!</li>
             <li>Начала немного рисовать для своей игры.</li>
+            <p>
+            У меня получился платформер, где нужно дойти до финиша, управляя клубком ниток. Клубок постепенно разматывается. 
+            Если размотается полностью — проигрыш. А сложность в том, что я добавила кнопки, которые инвертируют управление и меняют гравитацию
+            </p>
           </ul>
 
           <h2>День 4 — Всё проспала!</h2>
@@ -153,12 +163,9 @@ export const tanglejumpPost: Post = {
 
           <h2>Результат:</h2>
           <ul>
-            <li>У команды не вышел рабочий билд. Точнее, вышел, но не совсем рабочий и после таймера.</li>
-            <li>В своём первом джеме я умудрилась поучаствовать дважды! Может показаться, что было некрасиво с моей стороны участвовать в том же джеме параллельно, но я и так могла только рисовать по запросу — что я и делала. 
-            (Хотя можно было бы вникнуть в процесс и самостоятельно рисовать и накидывать арт без согласования, но из-за отсутствия единого видения игры это было почти нереально.)</li>
+            <li>К сожалению, у команды не получился стабильный билд в срок. Тут я окончательно поняла ценность рабочего, пусть и простого проекта</li>
             <li>
-            К моему удивлению, моя игра оказалась в первой четверти по топу. 
-            Хотя проектов в целом было немного. Зато я осознала, что даже неинтересный, примитивный, но рабочий проект гораздо лучше, чем сложные идеи, которые не успеваешь или не можешь реализовать.
+            В своём первом джеме я умудрилась поучаствовать дважды! Может показаться, что было некрасиво с моей стороны участвовать в том же джеме параллельно, но в данном случае можно было только рисовать по запросу — что я и делала. 
             </li>
           </ul>
         </div>
