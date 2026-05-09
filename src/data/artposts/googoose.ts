@@ -38,6 +38,14 @@ export const googoosePost: ArtPost = {
       <li>Система способностей и разные миры</li>
       <li>Боссы</li>
     </ul>
+    <p>
+    За развитием проекта можно следить в тг-канале: 
+    <a href="https://t.me/googoosegame" class="text-primary hover:text-primary/80 underline">Goo-Goose</a>
+    </p>
+    <p>
+    YouTube канал:
+    <a href="https://youtube.com/@googoosegame?si=fYJCgJyK4-PFOGQc" class="text-primary hover:text-primary/80 underline">Goo-Goose - YouTube</a>
+    </p>
 
     <h2>Моя роль на проекте:</h2>
     <p>
@@ -56,9 +64,9 @@ export const googoosePost: ArtPost = {
       <li>Если всё хорошо или нужно обсудить с командой - заливаю на GitHub</li>
     </ul>
      <p>
-    В общем, получаю задание в виде краткого описания с точки зрения нарратива и болваники уровня. Ниже более подробное описание...
+    В общем, превращаю уровни в приятные глазу локации
     </p>
   `,
-  image: `${base}images/concepts/Unicorn.webp`,
+  image: `${base}images/googoose/GooGoose_banner.webp`,
   date: '2021-03-10',
 };
