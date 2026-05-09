@@ -11,40 +11,47 @@ export const runpunzelPost: Post = {
   descriptionRu: 'Джемовый поект на тему "Точка невозврата"',
 
 
-  content: `
-  <h2>About the project</h2>
-  <p>This game is my first introduction to Unity.</p>
+    content: `
+      <h2>About the project</h2>
+      <p>This game is my first introduction to Unity.</p>
 
-  <p>
-  The game was developed as part of a local Russian game jam. The theme was "point of no return".
-  The game features several levels, and your goal is simply to reach the exit. But it's not that simple! You'll have to do this multiple times, playing not only as the princess but also as the ghosts, whose goal is to stop the princess from escaping.
-  Within a single level, each run is recorded. You have to consider your previous actions to avoid being killed by your own past moves! Can't figure it out? Restart the entire level from scratch! Mwahahaha!!!
-  </p>
-  <p>
-  Okay, okay — I made the levels not too hard 😊
-  </p>
+      <p>
+      The game was developed as part of a local Russian game jam. The theme was "point of no return".
+      </p>
+      <p>
+      The game features several levels, and the goal is to reach the exit. But it's not that simple! You'll have to do this multiple times, playing not only as the princess but also as ghosts whose goal is to stop the princess from getting through.
+      Within a single level, each playthrough is recorded. And you need to take into account your previous actions to avoid being killed by your own moves! Can't do it? Restart the whole level from scratch! Muahahaha!!!
+      </p>
+      <p>
+      Okay, I made the levels not too difficult :)
+      </p>
 
-  <details class="dev-details">
-    <summary class="dev-summary">
-      Development — jam experience
-      <span class="arrow">▼</span>
-    </summary>
-    <div class="dev-content">
+      <details class="dev-details">
+        <summary class="dev-summary">
+          Development — jam experience
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
 
-      <ul>
-        <li>Coming soon: the story of how I assembled a team and ended up sitting alone at the end of day two, desperately trying to understand someone else's code.</li>
-      </ul>
+          <ul>
+            <li>Later there will be a story about how I assembled a team and ended up sitting desperately trying to understand someone else's code by the end of day two</li>
+          </ul>
 
-      <h2>Result:</h2>
-      <ul>
-        <li>2nd place!!</li>
-        <li>Correction: There were only 42 games in total. But that's still a great result!</li>
-        <img src="/portfolio/images/runpunzel/other/RunPunzel_results.webp" alt="Game results" class="rounded-xl my-4" />
-      </ul>
+          <h2>Result:</h2>
+          <ul>
+            <li>2nd place!!</li>
+            <li>Correction: There were only 42 games total. But still, it's a great achievement!</li>
+            <img src="/portfolio/images/runpunzel/other/RunPunzel_results.webp" alt="Results screenshot" class="rounded-xl my-4" />
+            <p>
+              Here's the 
+              <a href="https://itch.io/jam/myindie-lvl6/rate/3972031" class="text-primary hover:text-primary/80 underline">link</a>
+              to the results.
+            </p>
+          </ul>
 
-    </div>
-  </details>
-`,
+        </div>
+      </details>
+    `,
 
 
     contentRu: `
@@ -53,7 +60,9 @@ export const runpunzelPost: Post = {
 
       <p>
       Игра разрабатывалась в рамках локального российского джема. Тема — точка невозврата.
-      игре представлены несколько уровней и твоя задача просто пройти до выхода. Но не всё так просто! Тебе придется проделать это несколько раз и играя не только за принцессу, но и за призраков, чья цель - не дать принцессе пройти.
+      </p>
+      <p>
+      В игре представлены несколько уровней и задача - пройти до выхода. Но не всё так просто! Придется проделать это несколько раз и играя не только за принцессу, но и за призраков, чья цель - не дать принцессе пройти.
       В рамках одного уровня каждый проход записывается. И нужно учитывать свои предыдущие действия, чтобы не погибнуть от своих же действий! Не получается? Переигрывай весь уровень сначала! Вуахахах!!!
       </p>
       <p>
@@ -76,6 +85,12 @@ export const runpunzelPost: Post = {
             <li>2ое место!!</li>
             <li>Поправка: Было всего 42 игры. Но это всё равно результат!</li>
             <img src="/portfolio/images/runpunzel/other/RunPunzel_results.webp" alt="Developer's notes" class="rounded-xl my-4" />
+            <p>
+            Оставляю 
+            <a href="https://itch.io/jam/myindie-lvl6/rate/3972031" class="text-primary hover:text-primary/80 underline">ссылочку</a>
+             на результаты.
+            </p>
+            
           </ul>
 
         </div>
