@@ -11,7 +11,7 @@ export const projects = [
     aboutEn: 'An easy card game on a hexagonal board with deckbuilding. Build your kingdom, keep track of the loyalty of the inhabitants, and most importantly, find out why you are here',
     aboutRu: 'Небольшая карточная игра на гексагональном поле с декбилдингом. Стройте своё королевство, следите за лояльностью жителей и главное - узнайте зачем вы здесь',
     gifUrl: `${base}images/aceage/AceAge.webp`,
-    github: 'https://github.com/PureshkaGames/AceAge',
+    //github: 'https://github.com/PureshkaGames/AceAge',
     itch: 'https://clinicallysleepy.itch.io/ace-age',
     myindie: ''
   },
@@ -30,7 +30,7 @@ export const projects = [
   },
   {
     title: 'RunPunzel',
-    //slug: 'runpunzel',
+    slug: 'runpunzel',
     tech: ['Puzzle', 'Top-Down', 'Turn-Based', '2D', 'Jam'],
     descriptionEn: 'She’s done waiting. The tower won’t let her go',
     descriptionRu: 'Она устала ждать... Повторяй, пока не сбежишь',
