@@ -87,7 +87,7 @@ export const runpunzelPost: Post = {
             <img src="/portfolio/images/runpunzel/other/RunPunzel_results.webp" alt="Developer's notes" class="rounded-xl my-4" />
             <p>
             Оставляю 
-            <a href="https://itch.io/jam/myindie-lvl6/rate/3972031" class="text-primary hover:text-primary/80 underline">ссылочку</a>
+            <a href="https://itch.io/jam/myindie-lvl6/results" class="text-primary hover:text-primary/80 underline">ссылочку</a>
              на результаты.
             </p>
             
