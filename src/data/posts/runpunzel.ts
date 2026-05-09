@@ -58,23 +58,23 @@ export const runpunzelPost: Post = {
           <span class="arrow">▼</span>
         </summary>
         <div class="dev-content">
-          <h2>Анимации</h2>
+          <h2>Animations</h2>
 	      <div class="animation-grid">
  	       <div class="animation-item">
  	         <img src="${base}images/runpunzel/other/princess_death-Sheet.webp" alt="16x32 animation" class="pixel-art" width="64" height="128" />
- 	         <span>32×32</span>
+ 	         <span>death-appearance</span>
 	        </div>
 	        <div class="animation-item">
- 	         <img src="${base}images/runpunzel/other/princess_fall.webp" alt="16x32 animation" class="pixel-art" width="64" height="128" />
-	          <span>64×64</span>
+ 	         <img src="${base}images/runpunzel/other/princess_fall.webp" alt="32x32 animation" class="pixel-art" width="128" height="128" />
+	          <span>fall</span>
  	       </div>
  	       <div class="animation-item">
  	         <img src="${base}images/runpunzel/other/princess_idle-Sheet.webp" alt="16x32 animation" class="pixel-art" width="64" height="128" />
-	          <span>128×128</span>
+	          <span>idle</span>
 	       </div>
            <div class="animation-item">
  	         <img src="${base}images/runpunzel/other/princess_run-Sheet.webp" alt="16x32 animation" class="pixel-art" width="64" height="128" />
-	          <span>128×128</span>
+	          <span>run</span>
 	       </div>
           </div>
         </div>
@@ -127,7 +127,7 @@ export const runpunzelPost: Post = {
 
       <details class="dev-details">
         <summary class="dev-summary">
-          Art
+          Арт
           <span class="arrow">▼</span>
         </summary>
         <div class="dev-content">
@@ -135,19 +135,19 @@ export const runpunzelPost: Post = {
 	      <div class="animation-grid">
  	       <div class="animation-item">
  	         <img src="${base}images/runpunzel/other/princess_death-Sheet.webp" alt="16x32 animation" class="pixel-art" width="64" height="128" />
- 	         <span>32×32</span>
+ 	         <span>смерть-появление</span>
 	        </div>
 	        <div class="animation-item">
- 	         <img src="${base}images/runpunzel/other/princess_fall.webp" alt="16x32 animation" class="pixel-art" width="64" height="128" />
-	          <span>64×64</span>
+ 	         <img src="${base}images/runpunzel/other/princess_fall.webp" alt="32x32 animation" class="pixel-art" width="128" height="128" />
+	          <span>падение</span>
  	       </div>
  	       <div class="animation-item">
  	         <img src="${base}images/runpunzel/other/princess_idle-Sheet.webp" alt="16x32 animation" class="pixel-art" width="64" height="128" />
-	          <span>128×128</span>
+	          <span>idle</span>
 	       </div>
            <div class="animation-item">
  	         <img src="${base}images/runpunzel/other/princess_run-Sheet.webp" alt="16x32 animation" class="pixel-art" width="64" height="128" />
-	          <span>128×128</span>
+	          <span>бег</span>
 	       </div>
           </div>
         </div>
