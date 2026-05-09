@@ -81,7 +81,7 @@ const getArtworkData = (art: typeof artworks[0]) => {
     </div>
 
     <!-- Контейнер работ -->
-    <div id="artworks-container" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div id="artworks-container" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 px-2 md:px-4">
       {artworks.map(art => {
  	 const { title, description } = getArtworkData(art);
 	  return (

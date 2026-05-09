@@ -30,6 +30,14 @@ export const foresterPost: ArtPost = {
     <div class="dev-content">
       <p>A mysterious forester who doesn't need a lantern in the dark forest — he is the lantern!</p>
       <img src="/portfolio/images/forester/forester_game.webp" alt="Forester" class="rounded-xl my-4" />
+      <p>These were the sketches. Originally it was supposed to be an oldman.</p>
+        <img
+          src="/portfolio/images/forester/forester_sketches.webp"
+          alt="Forester"
+          class="rounded-xl my-4"
+          width="512"
+          height="512"
+        />
     </div>
   </details>
 
@@ -101,6 +109,14 @@ export const foresterPost: ArtPost = {
     <div class="dev-content">
       <p>Таинственный лесник, которому не нужен фонарь в мрачном лесу - он и есть фонарь!</p>
       <img src="/portfolio/images/forester/forester_game.webp" alt="Forester" class="rounded-xl my-4" />
+      <p>Такими были эскизы. Изначально это должен был быть дед</p>
+        <img
+          src="/portfolio/images/forester/forester_sketches.webp"
+          alt="Forester"
+          class="rounded-xl my-4"
+          width="512"
+          height="512"
+        />
     </div>
   </details>
 
