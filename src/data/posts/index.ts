@@ -1,6 +1,8 @@
 // src/data/posts/index.ts
 import { aceagePost } from './aceage';
 import { gutsoutPost } from './gutsout';
+import { tanglejumpPost } from './tanglejump';
+import { runpunzelPost } from './runpunzel';
 
 export interface Post {
   slug: string;
@@ -18,5 +20,7 @@ export interface Post {
 
 export const posts: Post[] = [
   aceagePost,
-  gutsoutPost
+  gutsoutPost,
+  tanglejumpPost,
+  runpunzelPost,
 ];
