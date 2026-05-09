@@ -18,6 +18,13 @@ export const gutsoutPost: Post = {
     <a href="https://myindie.ru/jams/jam/myindie-game-jam-level-9" class="text-primary hover:text-primary/80 underline">MyIndie GameJam level9</a>
   </p>
 
+  <h2>Key features</h2>
+  <ul>
+    <li>Turn-based puzzle</li>
+    <li>Parameter balancing system through rearranging</li>
+    <li>Stylish visuals + pleasant sound design</li>
+  </ul>
+
   <details class="dev-details">
     <summary class="dev-summary">
       Development - jam experience
@@ -161,12 +168,7 @@ export const gutsoutPost: Post = {
     </div>
   </details>
 
-  <h2>Key features</h2>
-  <ul>
-    <li>Turn-based puzzle</li>
-    <li>Parameter balancing system through rearranging</li>
-    <li>Stylish visuals + pleasant sound design</li>
-  </ul>
+
 `,
     
 
@@ -175,6 +177,12 @@ export const gutsoutPost: Post = {
     contentRu: `
   <h2>О проекте</h2>
   <p>GutsOut — это простенький пазл, где в роли оккультного доктора мы лечим недуги пациентов подменой органов. Основной геймплей сосредоточен на балансировке параметров органов.</p>
+  <h2>Особенности</h2>
+  <ul>
+    <li>Пошаговая головоломка</li>
+    <li>Система балансировки параметров путем перестановок</li>
+    <li>Стильный визуал + приятное звуковое оформление</li>
+  </ul>
   <p>Игра разрабатывалась в рамках джема 
     <a href="https://myindie.ru/jams/jam/myindie-game-jam-level-9" class="text-primary hover:text-primary/80 underline">MyIndie GameJam level9</a>
   </p>
@@ -208,7 +216,7 @@ export const gutsoutPost: Post = {
       <details class="dev-details">
         <summary class="dev-summary">
           Заметки разработчика
-          <span class="arrow">▼</span>
+          <span class="arrow"></span>
         </summary>
         <div class="dev-content">
           <p>Как выглядел процессинг идеи</p>
@@ -320,12 +328,6 @@ export const gutsoutPost: Post = {
     </div>
   </details>
 
-  <h2>Ключевые особенности</h2>
-  <ul>
-    <li>Пошаговая головоломка</li>
-    <li>Система балансировки параметров путем перестановок</li>
-    <li>Стильный визуал + приятное звуковое оформление</li>
-  </ul>
 `,
 
 
