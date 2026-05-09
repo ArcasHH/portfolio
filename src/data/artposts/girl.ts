@@ -18,19 +18,42 @@ export const girlPost: ArtPost = {
 
   <h2>Spritesheets in different resolutions</h2>
   <div class="animation-grid">
-    <div class="animation-item">
-      <img src="${base}videos/Girl32.webp" alt="32x32 animation" class="pixel-art" width="128" height="128" />
-      <span>32×32</span>
+      <div class="animation-item">
+        <div class="pixel-container" style="width: 128px; height: 128px;">
+          <img
+            src="${base}videos/Girl32.webp" 
+            alt="32x32 animation" 
+            class="pixel-perfect"
+            style="width: 32px; height: 32px; transform: scale(4);"
+          />
+        </div>
+        <span>32×32</span>
+      </div>
+  
+      <div class="animation-item">
+        <div class="pixel-container" style="width: 128px; height: 128px;">
+          <img 
+            src="${base}videos/Girl64.webp" 
+            alt="64x64 animation" 
+            class="pixel-perfect"
+            style="width: 64px; height: 64px; transform: scale(2);"
+          />
+        </div>
+        <span>64×64</span>
+      </div>
+  
+      <div class="animation-item">
+        <div class="pixel-container" style="width: 128px; height: 128px;">
+          <img 
+            src="${base}videos/Girl128.webp" 
+            alt="128x128 animation" 
+            class="pixel-perfect"
+            style="width: 128px; height: 128px; transform: scale(1);"
+          />
+        </div>
+        <span>128×128</span>
+      </div>
     </div>
-    <div class="animation-item">
-      <img src="${base}videos/Girl64.webp" alt="64x64 animation" class="pixel-art" width="128" height="128" />
-      <span>64×64</span>
-    </div>
-    <div class="animation-item">
-      <img src="${base}videos/Girl128.webp" alt="128x128 animation" class="pixel-art" width="128" height="128" />
-      <span>128×128</span>
-    </div>
-  </div>
 
   <h2>Process</h2>
   <ul>
@@ -56,20 +79,44 @@ export const girlPost: ArtPost = {
     <p>Причина - ускорение производства покадровой пиксельной 2D анимации персонажа (Aseprite) с сохранением возможности ручной доработки</p>
 
     <h2>Спрайтшиты в разных разрешениях </h2>
-	  <div class="animation-grid">
- 	   <div class="animation-item">
- 	     <img src="${base}videos/Girl32.webp" alt="32x32 animation" class="pixel-art" width="128" height="128" />
- 	     <span>32×32</span>
-	    </div>
-	    <div class="animation-item">
- 	     <img src="${base}videos/Girl64.webp" alt="64x64 animation" class="pixel-art" width="128" height="128" />
-	      <span>64×64</span>
- 	   </div>
- 	   <div class="animation-item">
- 	     <img src="${base}videos/Girl128.webp" alt="128x128 animation" class="pixel-art" width="128" height="128" />
-	      <span>128×128</span>
-	   </div>
+	<div class="animation-grid">
+      <div class="animation-item">
+        <div class="pixel-container" style="width: 128px; height: 128px;">
+          <img
+            src="${base}videos/Girl32.webp" 
+            alt="32x32 animation" 
+            class="pixel-perfect"
+            style="width: 32px; height: 32px; transform: scale(4);"
+          />
+        </div>
+        <span>32×32</span>
+      </div>
+  
+      <div class="animation-item">
+        <div class="pixel-container" style="width: 128px; height: 128px;">
+          <img 
+            src="${base}videos/Girl64.webp" 
+            alt="64x64 animation" 
+            class="pixel-perfect"
+            style="width: 64px; height: 64px; transform: scale(2);"
+          />
+        </div>
+        <span>64×64</span>
+      </div>
+  
+      <div class="animation-item">
+        <div class="pixel-container" style="width: 128px; height: 128px;">
+          <img 
+            src="${base}videos/Girl128.webp" 
+            alt="128x128 animation" 
+            class="pixel-perfect"
+            style="width: 128px; height: 128px; transform: scale(1);"
+          />
+        </div>
+        <span>128×128</span>
+      </div>
     </div>
+
     <h2>Процесс</h2>
     <ul>
       <li>Создание low-poly модели персонажа с ригом и скелетной анимацией</li>
