@@ -53,14 +53,5 @@ export const artworks: Artwork[] = [
         src: `${base}images/forester/Forester.webp`,
         type: 'image'
     },
-    { 
-        slug: 'unicorn',
-        titleEn: 'Unicorn', 
-        titleRu: 'Единорог', 
-        descriptionEn: 'Unicorn concept for a dark fantasy', 
-        descriptionRu: 'Концепт единорога для мрачного фентези',
-        tags: ['Concept'],
-        src: `${base}images/concepts/Unicorn_preview.webp`,
-        type: 'image'
-    },
+
 ];
