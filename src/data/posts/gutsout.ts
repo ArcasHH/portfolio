@@ -41,7 +41,6 @@ export const gutsoutPost: Post = {
 
       <h2>Plans:</h2>
       <ul>
-        <li>Theme: We decided to move away from banal rituals, alchemy and cultists towards the idea of hidden connections/dependencies + organ replacement for the mentally ill</li>
         <li>We moved away from banal alchemy, rituals and cultists towards the idea that body and soul are mystically connected. By rearranging organs, the player performs a ritual of soul reconfiguration. The very idea of "healing by replacing insides" sounds unscientific, and working with organs has always been part of dark practices (autopsies, divination by entrails, body alchemy).</li>
         <li>Art: black and white, messy → "as if the patient tortured a graphics tablet". Also patient poses like in Egyptian art: profile head and legs, frontal torso. Will it evoke associations with the ancient underworld?</li>
         <li>Gameplay: swap organs to treat patients. Organs have characteristics in certain emotions. The set of emotions determines the illness, visually reflected in the patient's appearance. By rearranging organs we change emotions and, consequently, the patient's illness state. You need to figure out which organs the patient needs based on how their appearance and sounds change. (Spoiler: we didn't make it and ended up displaying numerical parameters mind, soul, body. But maybe it's for the best - without explicit display of how organs affect, the game would become guesswork).</li>
@@ -203,7 +202,6 @@ export const gutsoutPost: Post = {
 
       <h2>Планы:</h2>
       <ul>
-        <li>Тема: Решили уйти от банальных ритуалов, алхимии и культистов к идее скрытых связей/зависимости + замена органов у душевнобольных</li>
         <li>Мы ушли от банальных алхимии, ритуалов и культистов в сторону идеи, что тело и душа связаны мистически. Перекладывая органы игрок проводит ритуал перенастройки души. Сама идея «лечить заменой внутренностей» звучит антинаучно, а работа с органами всегда была частью тёмных практик (вскрытия, гадания на внутренностях, алхимия тела).</li>
         <li>Арт: ч/б, неаккуратный → «будто пациент мучил графический планшет». Также позы пациентов как в египетском искусстве: профиль головы и ног, фас корпуса. Будет ли вызывать ассоциации древнего загробного мира?</li>
         <li>Геймплей: менять органы местами чтобы лечить пациентов. Органы имеют характеристики в определенных эмоциях. Набор эмоции определяет болезнь, что отражено визуально во внешнем виде пациента. Переставлением органов мы меняем эмоции и, как следствие, состояние болезни пациента. Нужно вычислить какие органы нужны пациенту по тому от чего меняется его внешний вид, издаваемые звуки. (Спойлер: мы не успели и пришли к отображению численных параметров mind, soul, body. Но может оно и к лучшему - без явного отображения как влияют те или иные органы игра бы превратилась в угадайку).</li>

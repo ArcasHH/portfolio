@@ -25,7 +25,7 @@ export const projects = [
     aboutRu: 'Простенький пазл, где в роли оккультного доктора будем лечить недуги пациентов подменой органов. Основной геймплей сосредоточен на балансировке параметров',
     gifUrl: `${base}images/gutsout/GutsOut.webp`,
     github: 'https://github.com/ArcasHH/GutsOut',
-    itch: 'https://arcashh.itch.io/gutsout?secret=h0smEhHgy6gxjRCck94dfUcSI',
+      itch: 'https://arcashh.itch.io/gutsout',
     myindie: 'https://myindie.ru/games/game/gutsout'
   },
   {
