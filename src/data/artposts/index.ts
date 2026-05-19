@@ -8,7 +8,6 @@ export interface ArtPost {
   content: string;
   contentRu: string;
   image: string;
-  date: string;
 }
 
 import { googoosePost } from './googoose';

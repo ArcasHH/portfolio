@@ -99,17 +99,18 @@
     border-top: 1px solid var(--color-brand-light);
 }
 
-.blog-content li {
-    padding-left: 1.5rem;
-    position: relative;
-    margin-bottom: 0.5rem;
-}
-
-.blog-content li::before {
+li::before {
     content: " ● ";
     position: absolute;
     left: 0;
     color: var(--color-primary);
+}
+
+li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+    list-style: none;
 }
 
 @media (max-width: 768px) {
@@ -133,7 +134,6 @@
     }
 }
 
-/* Пиксельная анимация - сетка */
 .animation-grid {
     display: flex;
     flex-wrap: wrap;
@@ -157,15 +157,13 @@
     opacity: 0.8;
 }
 
-/* Пиксельная анимация - чёткие пиксели */
-/* Пиксельная графика — чёткие края */
+
 .pixel-art {
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     -ms-interpolation-mode: nearest-neighbor;
 }
 
-/* Вариант для контейнера */
 .pixel-perfect {
     image-rendering: pixelated;
 }

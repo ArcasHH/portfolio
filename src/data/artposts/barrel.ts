@@ -46,5 +46,4 @@ export const barrelPost: ArtPost = {
     </ul>
   `,
   image: `${base}videos/Barrel_low.webp`,
-  date: '2021-03-10',
 };

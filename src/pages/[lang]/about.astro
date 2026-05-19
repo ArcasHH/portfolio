@@ -1,6 +1,7 @@
 ---
 // src/pages/[lang]/about.astro
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { Icon } from 'astro-icon/components';
 import { t } from '../../i18n';
 
 export function getStaticPaths() {
@@ -16,107 +17,96 @@ const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title={t('about.title', currentLang)}>
-  <div class="max-w-3xl mx-auto px-4 py-12">
+  <div class="max-w-3xl mx-auto mt-12 px-4">
 
     <h1 class="text-5xl md:text-6xl font-bold mb-8 text-center text-brand-white">
-      {currentLang === 'ru' ? 'Обо мне' : 'About me'}
+      {currentLang === 'ru' ? 'РћР±Рѕ РјРЅРµ' : 'About me'}
     </h1>
 
-    {/* Русская версия */}
-    {currentLang === 'ru' && (
-      <div class="space-y-6 text-brand-white">
-        <p class="text-2xl text-primary font-semibold">Меня зовут Ася.</p>
-        
-        <p class="text-xl leading-relaxed">
-          Я — геймдев-специалист с редким сочетанием навыков:
-        </p>
-        
-        <ul class="space-y-3 text-lg">
-          <li class="flex items-start gap-3">
-            <span class="text-2xl"></span>
-            <span><strong>Геймдизайн</strong> — механики, баланс, прототипирование</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-2xl"></span>
-            <span><strong>Программирование</strong> — Unity, Godot, C#, шейдеры</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-2xl"></span>
-            <span><strong>2D-арт и технический арт</strong> — окружение, UI, интеграция в движок</span>
-          </li>
-        </ul>
+    <div class="space-y-6 text-brand-white/90 text-lg leading-relaxed">
+      
+      {currentLang === 'ru' ? (
+        <>
+          <p>
+            РњРµРЅСЏ Р·РѕРІСѓС‚ РђРЅР°СЃС‚Р°СЃРёСЏ. РЇ вЂ” РіРµР№РјРґРµРІ-СЃРїРµС†РёР°Р»РёСЃС‚ СЃ РЅР°РІС‹РєР°РјРё:
+          </p>
 
-        <p class="text-lg leading-relaxed bg-brand-dark p-4 rounded-xl">
-          Сейчас работаю над мобильным платформером как <strong>художник окружения + тех.арт</strong> 
-          (полный пайплайн ассетов в Unity: от концепта до настройки батчинга и слоёв сортировки).
-        </p>
+            <div class="space-y-2">
+              <div class="flex items-center gap-3">
+                <Icon name="mdi:controller" class="w-6 h-6 text-primary" />
+                <span>Р“РµР№РјРґРёР·Р°Р№РЅ (РјРµС…Р°РЅРёРєРё, Р±Р°Р»Р°РЅСЃ, РїСЂРѕС‚РѕС‚РёРїРёСЂРѕРІР°РЅРёРµ)</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <Icon name="mdi:cog" class="w-6 h-6 text-primary" />
+                <span>РџСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёРµ (Unity, Godot, C#, С€РµР№РґРµСЂС‹)</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <Icon name="mdi:palette" class="w-6 h-6 text-primary" />
+                <span>2D-Р°СЂС‚ Рё С‚РµС…РЅРёС‡РµСЃРєРёР№ Р°СЂС‚</span>
+              </div>
+            </div>
 
-        <p class="text-xl text-primary font-semibold mt-6">
-          Ищу позицию в геймдизайне, техдизайне, техническом арте или Unity-разработке.
-        </p>
+          <p>
+            РЎРµР№С‡Р°СЃ СЂР°Р±РѕС‚Р°СЋ РЅР°Рґ РјРѕР±РёР»СЊРЅС‹Рј РїР»Р°С‚С„РѕСЂРјРµСЂРѕРј РєР°Рє С…СѓРґРѕР¶РЅРёРє РѕРєСЂСѓР¶РµРЅРёСЏ + С‚РµС…РЅРёС‡РµСЃРєРёР№ Р°СЂС‚.
+          </p>
 
-        <div class="border-t border-brand-light pt-6 mt-6">
-          <p class="font-semibold text-xl mb-3"> Связаться:</p>
-          <ul class="space-y-2 text-lg">
-            <li> Telegram: <a href="https://t.me/arcashh" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">@arcashh</a></li>
-            <li> Почта: <a href="mailto:asyaludv@mail.ru" class="text-primary hover:underline">asyaludv@mail.ru</a></li>
-          </ul>
-        </div>
+          <p>
+            РС‰Сѓ РїРѕР·РёС†РёСЋ РІ РіРµР№РјРґРёР·Р°Р№РЅРµ, Р»РµРІРµР» РґРёР·Р°Р№РЅРµ, С‚РµС…РЅРёС‡РµСЃРєРѕРј РґРёР·Р°Р№РЅРµ, С‚РµС…РЅРёС‡РµСЃРєРѕРј Р°СЂС‚Рµ.
+          </p>
 
-        <div class="bg-brand-dark/50 p-4 rounded-xl mt-4">
-          <p> <strong>Портфолио:</strong> смотрите проекты выше на сайте.</p>
-          <p class="mt-2"> <strong>Развёрнутое резюме</strong> — вышлю по запросу.</p>
-        </div>
-      </div>
-    )}
+          <div class="mt-8 pt-4 border-t border-brand-light">
+            <p><strong>РЎРІСЏР·Р°С‚СЊСЃСЏ:</strong></p>
+            <p>Telegram: <a href="https://t.me/arcashh" class="text-primary hover:underline" target="_blank">@arcashh</a></p>
+            <p>РџРѕС‡С‚Р°: <a href="mailto:asyaludv@mail.ru" class="text-primary hover:underline">asyaludv@mail.ru</a></p>
+          </div>
 
-    {/* Английская версия */}
-    {currentLang === 'en' && (
-      <div class="space-y-6 text-brand-white">
-        <p class="text-2xl text-primary font-semibold">My name is Asya.</p>
-        
-        <p class="text-xl leading-relaxed">
-          I'm a game development specialist with a rare combination of skills:
-        </p>
-        
-        <ul class="space-y-3 text-lg">
-          <li class="flex items-start gap-3">
-            <span class="text-2xl"></span>
-            <span><strong>Game Design</strong> — mechanics, balance, prototyping</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-2xl"></span>
-            <span><strong>Programming</strong> — Unity, Godot, C#, shaders</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-2xl"></span>
-            <span><strong>2D Art & Technical Art</strong> — environment, UI, engine integration</span>
-          </li>
-        </ul>
+          <p style="color: var(--color-brand-light);">
+            РџРѕСЂС‚С„РѕР»РёРѕ: СЃРјРѕС‚СЂРёС‚Рµ РїСЂРѕРµРєС‚С‹ РЅР° СЃР°Р№С‚Рµ.<br />
+            Р Р°Р·РІС‘СЂРЅСѓС‚РѕРµ СЂРµР·СЋРјРµ вЂ” РїРѕ Р·Р°РїСЂРѕСЃСѓ.
+          </p>
+        </>
+      ) : (
+        <>
+          <p>
+            My name is Anastasia. I am a game development specialist with a combination of skills:
+          </p>
 
-        <p class="text-lg leading-relaxed bg-brand-dark p-4 rounded-xl">
-          Currently working on a mobile platformer as an <strong>Environment Artist + Technical Artist</strong> 
-          (full asset pipeline in Unity: from concept to batching and sorting layer setup).
-        </p>
+            <div class="space-y-2">
+              <div class="flex items-center gap-3">
+                <Icon name="mdi:controller" class="w-6 h-6 text-primary" />
+                <span>Game Design (mechanics, balance, prototyping)</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <Icon name="mdi:cog" class="w-6 h-6 text-primary" />
+                <span>Programming (Unity, Godot, C#, shaders)</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <Icon name="mdi:palette" class="w-6 h-6 text-primary" />
+                <span>2D Art and Technical Art</span>
+              </div>
+            </div>
 
-        <p class="text-xl text-primary font-semibold mt-6">
-          Looking for a position in Game Design, Technical Design, Technical Art, or Unity Development.
-        </p>
+          <p>
+            Currently working on a mobile platformer as an environment artist + technical art.
+          </p>
 
-        <div class="border-t border-brand-light pt-6 mt-6">
-          <p class="font-semibold text-xl mb-3"> Contact me:</p>
-          <ul class="space-y-2 text-lg">
-            <li> Telegram: <a href="https://t.me/arcashh" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">@arcashh</a></li>
-            <li> Email: <a href="mailto:asyaludv@mail.ru" class="text-primary hover:underline">asyaludv@mail.ru</a></li>
-          </ul>
-        </div>
+          <p>
+            Looking for a position in Game Design, Level Design, Technical Design, Technical Art.
+          </p>
 
-        <div class="bg-brand-dark/50 p-4 rounded-xl mt-4">
-          <p> <strong>Portfolio:</strong> check out my projects above on the site.</p>
-          <p class="mt-2"> <strong>Detailed resume</strong> — available upon request.</p>
-        </div>
-      </div>
-    )}
+          <div class="mt-8 pt-4 border-t border-brand-light">
+            <p><strong>Contact me:</strong></p>
+            <p>Telegram: <a href="https://t.me/arcashh" class="text-primary hover:underline" target="_blank">@arcashh</a></p>
+            <p>Email: <a href="mailto:asyaludv@mail.ru" class="text-primary hover:underline">asyaludv@mail.ru</a></p>
+          </div>
 
+          <p style="color: var(--color-brand-light);">
+            Portfolio: check out the projects on this site.<br />
+            Detailed resume вЂ” available upon request.
+          </p>
+        </>
+      )}
+
+    </div>
   </div>
 </BaseLayout>

@@ -165,5 +165,4 @@ export const foresterPost: ArtPost = {
 
   `,
   image: `${base}images/forester/Forester.webp`,
-  date: '2025-07-10',
 };

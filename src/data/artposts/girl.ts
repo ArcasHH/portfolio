@@ -37,14 +37,12 @@ export const girlPost: ArtPost = {
     <li>Creating a low-poly character model with rig and skeletal animation</li>
     <li>Setting up materials using Shader Graph in Blender</li>
     <li>Creating animation cycles</li>
-    <li>Exporting render using the SpriteSheetMaker add-on for Blender</li>
-    <li>Manual refinement in Aseprite</li>
+    <li>Exporting render and manual refinement in Aseprite</li>
   </ul>
 
   <h2>Tools used</h2>
   <ul>
     <li>Blender (modeling, rigging, animation, rendering)</li>
-    <li>SpriteSheetMaker / exporting frames to a single SpriteSheet</li>
     <li>Aseprite (final refinement and color correction)</li>
   </ul>
 `,
@@ -75,20 +73,17 @@ export const girlPost: ArtPost = {
       <li>Создание low-poly модели персонажа с ригом и скелетной анимацией</li>
       <li>Настройка материалов через Shader Graph в Blender</li>
       <li>Создание анимационных циклов</li>
-      <li>Экспорт рендера с помощью аддона SpriteSheetMaker для Blender</li>
-      <li>Ручная доработка в Aseprite</li>
+      <li>Экспорт рендера и учная доработка в Aseprite</li>
     </ul>
 
     
     <h2>Инструменты</h2>
     <ul>
       <li>Blender (моделинг, ригинг, анимация, рендер)</li>
-      <li>SpriteSheetMaker / экспорт кадров в едином SpriteSheet</li>
       <li>Aseprite (финальная доработка и цветокоррекция)</li>
     </ul>
   `,
 
 
   image: `${base}videos/Girl2.webp`,
-  date: '2026-01-15',
 };

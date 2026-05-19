@@ -1,5 +1,6 @@
 // src/data/artposts/googoose.ts
 import type { ArtPost } from './index';
+import 'img-comparison-slider';
 
 const base = import.meta.env.BASE_URL;
 
@@ -58,6 +59,19 @@ export const googoosePost: ArtPost = {
      <p>
     В общем, превращаю уровни в приятные глазу локации
     </p>
+
+    <div class="max-w-4xl mx-auto mt-4">
+
+        <h1>Сравнение работы</h1>
+
+        <img-comparison-slider>
+          <img slot="first" src="${base}images/gutsout/screenshots/screenshot1.webp" />
+          <img slot="second" src="${base}images/gutsout/screenshots/screenshot2.webp" />
+        </img-comparison-slider>
+
+      </div>
+
+
 
    <details class="dev-details">
     <summary class="dev-summary">
@@ -264,5 +278,4 @@ export const googoosePost: ArtPost = {
   </details>
   `,
   image: `${base}images/googoose/GooGoose_banner.webp`,
-  date: '2026-05-10',
 };
