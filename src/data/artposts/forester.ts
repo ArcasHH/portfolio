@@ -158,7 +158,7 @@ export const foresterPost: ArtPost = {
       <li>Ягоды, из которпых крафтятся зелья<li>
       <li>Ключ от ворот<li>
     </ul>
-      <img src="/portfolio/images/forester/forester_icons.webp" alt="Ассеты игры" class="rounded-xl my-4" />
+      <p><img src="/portfolio/images/forester/forester_icons.webp" alt="Ассеты игры" class="rounded-xl my-4" /></p>
     
   </details>
 

@@ -12,18 +12,111 @@ export function getStaticPaths() {
 
 const { lang } = Astro.params;
 const currentLang = lang;
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title={t('about.title', currentLang)}>
-  <div class="max-w-2xl mx-auto text-center mt-20">
+  <div class="max-w-3xl mx-auto px-4 py-12">
 
-    <h1 class="text-5xl md:text-6xl font-bold mb-6 text-brand-white">
-      {t('about.title', currentLang)}
+    <h1 class="text-5xl md:text-6xl font-bold mb-8 text-center text-brand-white">
+      {currentLang === 'ru' ? 'ќбо мне' : 'About me'}
     </h1>
 
-    <p class="text-xl text-primary">
-      {t('about.text', currentLang)}
-    </p>
+    {/* –усска€ верси€ */}
+    {currentLang === 'ru' && (
+      <div class="space-y-6 text-brand-white">
+        <p class="text-2xl text-primary font-semibold">ћен€ зовут јс€.</p>
+        
+        <p class="text-xl leading-relaxed">
+          я Ч геймдев-специалист с редким сочетанием навыков:
+        </p>
+        
+        <ul class="space-y-3 text-lg">
+          <li class="flex items-start gap-3">
+            <span class="text-2xl"></span>
+            <span><strong>√еймдизайн</strong> Ч механики, баланс, прототипирование</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-2xl"></span>
+            <span><strong>ѕрограммирование</strong> Ч Unity, Godot, C#, шейдеры</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-2xl"></span>
+            <span><strong>2D-арт и технический арт</strong> Ч окружение, UI, интеграци€ в движок</span>
+          </li>
+        </ul>
+
+        <p class="text-lg leading-relaxed bg-brand-dark p-4 rounded-xl">
+          —ейчас работаю над мобильным платформером как <strong>художник окружени€ + тех.арт</strong> 
+          (полный пайплайн ассетов в Unity: от концепта до настройки батчинга и слоЄв сортировки).
+        </p>
+
+        <p class="text-xl text-primary font-semibold mt-6">
+          »щу позицию в геймдизайне, техдизайне, техническом арте или Unity-разработке.
+        </p>
+
+        <div class="border-t border-brand-light pt-6 mt-6">
+          <p class="font-semibold text-xl mb-3"> —в€затьс€:</p>
+          <ul class="space-y-2 text-lg">
+            <li> Telegram: <a href="https://t.me/arcashh" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">@arcashh</a></li>
+            <li> ѕочта: <a href="mailto:asyaludv@mail.ru" class="text-primary hover:underline">asyaludv@mail.ru</a></li>
+          </ul>
+        </div>
+
+        <div class="bg-brand-dark/50 p-4 rounded-xl mt-4">
+          <p> <strong>ѕортфолио:</strong> смотрите проекты выше на сайте.</p>
+          <p class="mt-2"> <strong>–азвЄрнутое резюме</strong> Ч вышлю по запросу.</p>
+        </div>
+      </div>
+    )}
+
+    {/* јнглийска€ верси€ */}
+    {currentLang === 'en' && (
+      <div class="space-y-6 text-brand-white">
+        <p class="text-2xl text-primary font-semibold">My name is Asya.</p>
+        
+        <p class="text-xl leading-relaxed">
+          I'm a game development specialist with a rare combination of skills:
+        </p>
+        
+        <ul class="space-y-3 text-lg">
+          <li class="flex items-start gap-3">
+            <span class="text-2xl"></span>
+            <span><strong>Game Design</strong> Ч mechanics, balance, prototyping</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-2xl"></span>
+            <span><strong>Programming</strong> Ч Unity, Godot, C#, shaders</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-2xl"></span>
+            <span><strong>2D Art & Technical Art</strong> Ч environment, UI, engine integration</span>
+          </li>
+        </ul>
+
+        <p class="text-lg leading-relaxed bg-brand-dark p-4 rounded-xl">
+          Currently working on a mobile platformer as an <strong>Environment Artist + Technical Artist</strong> 
+          (full asset pipeline in Unity: from concept to batching and sorting layer setup).
+        </p>
+
+        <p class="text-xl text-primary font-semibold mt-6">
+          Looking for a position in Game Design, Technical Design, Technical Art, or Unity Development.
+        </p>
+
+        <div class="border-t border-brand-light pt-6 mt-6">
+          <p class="font-semibold text-xl mb-3"> Contact me:</p>
+          <ul class="space-y-2 text-lg">
+            <li> Telegram: <a href="https://t.me/arcashh" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">@arcashh</a></li>
+            <li> Email: <a href="mailto:asyaludv@mail.ru" class="text-primary hover:underline">asyaludv@mail.ru</a></li>
+          </ul>
+        </div>
+
+        <div class="bg-brand-dark/50 p-4 rounded-xl mt-4">
+          <p> <strong>Portfolio:</strong> check out my projects above on the site.</p>
+          <p class="mt-2"> <strong>Detailed resume</strong> Ч available upon request.</p>
+        </div>
+      </div>
+    )}
 
   </div>
 </BaseLayout>
