@@ -163,6 +163,5 @@ export const runpunzelPost: Post = {
 
     ],
 
-    date: '29 . 04 . 2026',
-    projectSlug: 'gutsout'
+    projectSlug: 'runpunzel'
   };

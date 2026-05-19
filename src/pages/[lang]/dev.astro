@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { t } from '../../i18n';
 import { Icon } from 'astro-icon/components';
 import { projects } from '../../data/projects';
+import ProjectLinks from '../../components/ProjectLinks.astro';
 
 export function getStaticPaths() {
   return [
@@ -48,6 +49,7 @@ const getProjectData = (project: typeof projects[0]) => {
     Itch.io
   </a>
   
+  {currentLang === 'en' && (
   <a href="https://gamejolt.com/@ArcasHH" target="_blank" rel="noopener noreferrer" 
      class="bg-brand-dark hover:bg-primary text-brand-white px-6 py-3 rounded-xl transition-all flex items-center gap-2">
     <img 
@@ -57,19 +59,24 @@ const getProjectData = (project: typeof projects[0]) => {
     />
     GameJolt
   </a>
+)}
 
-  <a href="https://myindie.ru/users/user/arcashh" target="_blank" rel="noopener noreferrer" 
-     class="bg-brand-dark hover:bg-primary text-brand-white px-6 py-3 rounded-xl transition-all flex items-center gap-2">
-    <img 
-        src={`${base}images/icons/logo_myindie.svg`} 
-        alt="GameJolt" 
-        class="w-6 h-6" 
-    />
-    MyIndie
-  </a>
- 
+
+  {currentLang === 'ru' && (
+    <a href="https://myindie.ru/users/user/arcashh" target="_blank" rel="noopener noreferrer" 
+       class="bg-brand-dark hover:bg-primary text-brand-white px-6 py-3 rounded-xl transition-all flex items-center gap-2">
+      <img 
+          src={`${base}images/icons/logo_myindie.svg`} 
+          alt="MyIndie" 
+          class="w-6 h-6" 
+      />
+      MyIndie
+    </a>
+  )}
 
  </div>
+ 
+ 
 
 
     <!-- Фильтр технологий -->
@@ -107,13 +114,14 @@ const getProjectData = (project: typeof projects[0]) => {
             data-tech={project.tech.join(',')}
           >
             <div class="flex flex-col md:flex-row gap-6">
+          
               {project.gifUrl && (
-                <div class="md:w-1/3">
+                <div class="md:w-1/5">
                   <img src={project.gifUrl} alt={project.title} class="rounded-4xl w-full" />
                 </div>
               )}
 
-              <div class="md:w-2/3">
+              <div class="md:w-3/5 lg:w-3/5">
                 <h2 class="text-4xl font-semibold text-brand-white">
                   {project.title}
                 </h2>
@@ -133,43 +141,11 @@ const getProjectData = (project: typeof projects[0]) => {
                 </p>
               </div>
 
-              <div class="mt-5 flex flex-col items-center gap-4">
-                {project.github && (
-                  <a href={project.github} 
-                    class={`${buttonClass} bg-brand-black hover:bg-brand-black/80 text-brand-dark`}>
-                    <Icon name="mdi:github" class="w-6 h-6" />
-                    GitHub
-                  </a>
-                )}
-
-                {project.itch && (
-                  <a href={project.itch} 
-                    class={`${buttonClass} bg-primary hover:bg-primary/80 text-brand-dark`}>
-                    <Icon name="simple-icons:itchdotio" class="w-6 h-6" />
-                    Play on itch.io
-                  </a>
-                )}
-
-                {project.myindie && (
-                  <a href={project.myindie} 
-                    class={`${buttonClass} bg-primary-violet hover:bg-primary-violet/80 text-brand-dark`}>
-                    <img 
-                        src={`${base}images/icons/logo_myindie.svg`} 
-                        alt="MyIndie" 
-                        class="w-6 h-6 object-contain" 
-                    />
-                    Play on MyIndie
-                  </a>
-                )}
-
-                {project.slug && (
-                  <a href={`${base}${currentLang}/blog/${project.slug}`} 
-                    class={`${buttonClass} bg-brand-light hover:bg-brand-light/80 text-brand-dark`}>
-                    <Icon name="mdi:book-open-page-variant" class="w-6 h-6" />
-                    Learn more
-                  </a>
-                )}
+              
+              <div class="md:w-1/5 flex flex-col items-stretch gap-3 ml-auto md:ml-4">
+                 <ProjectLinks slug={project.slug} direction="col" showBlog={true}/>
               </div>
+
             </div>
           </div>
         );

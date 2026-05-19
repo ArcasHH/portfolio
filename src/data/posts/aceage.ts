@@ -97,6 +97,5 @@ export const aceagePost: Post = {
     `${base}images/aceage/screenshots/screenshot1.webp`,
     `${base}images/aceage/screenshots/screenshot2.webp`,
   ],
-  date: '04 . 06 . 2025',
   projectSlug: 'aceage'
 };

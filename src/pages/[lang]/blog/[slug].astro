@@ -3,6 +3,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { posts } from '../../../data/posts';
 import { Icon } from 'astro-icon/components';
+import ProjectLinks from '../../../components/ProjectLinks.astro';
 
 export function getStaticPaths() {
   const languages = ['ru', 'en'];
@@ -61,6 +62,8 @@ const content = lang === 'ru' ? post.contentRu : post.content;
       {description}
     </p>
 
+    
+
     <!-- Галерея скриншотов -->
     {post.screenshots && post.screenshots.length > 0 && (
       <div class="mb-12">
@@ -79,6 +82,9 @@ const content = lang === 'ru' ? post.contentRu : post.content;
         </div>
       </div>
     )}
+
+    <!-- Ссылки на игру (GitHub, Itch, MyIndie) -->
+    <ProjectLinks slug={post.projectSlug} direction="row" showBlog={false} />
 
     <!-- Полный контент -->
     <div class="blog-content prose prose-invert prose-lg max-w-none" set:html={content}>

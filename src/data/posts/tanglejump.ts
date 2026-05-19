@@ -199,6 +199,5 @@ export const tanglejumpPost: Post = {
 	`${base}images/tanglejump/screenshots/screenshot2.webp`,
     ],
 
-    date: '29 . 04 . 2026',
-    projectSlug: 'gutsout'
+    projectSlug: 'tanglejump'
   };

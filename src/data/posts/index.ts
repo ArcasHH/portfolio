@@ -14,7 +14,6 @@ export interface Post {
   contentRu: string;
   image: string;
   screenshots: string[];
-  date: string;
   projectSlug: string;
 }
 

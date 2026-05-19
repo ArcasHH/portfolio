@@ -1,0 +1,91 @@
+---
+// src/components/ProjectLinks.astro
+import { Icon } from 'astro-icon/components';
+import { getProjectLinks } from '../data/projectLinks';
+
+export interface Props {
+  slug: string;
+  className?: string;
+  showBlog?: boolean;
+}
+
+const { 
+  slug, 
+  className = 'flex flex-col gap-3 w-full',
+  showBlog = true,
+  direction = 'col'
+} = Astro.props;
+
+const links = getProjectLinks(slug);
+const base = import.meta.env.BASE_URL;
+
+const currentPath = Astro.url.pathname;
+const currentLang = currentPath.includes('/en/') ? 'en' : 'ru';
+
+const blogUrl = links?.blog || (slug ? `${base}${currentLang}/blog/${slug}` : null);
+
+const buttonBaseClass = direction === 'row' 
+  ? "px-6 py-3 rounded-xl text-lg md:text-xl font-semibold transition-all flex items-center justify-center gap-2"
+  : "w-full px-6 py-3 rounded-xl text-lg md:text-xl font-semibold transition-all flex items-center justify-center gap-2";
+
+const buttonColors = {
+  github: "bg-black hover:bg-black/80 text-brand-white",
+  itch: "bg-primary hover:bg-primary/80 text-brand-white",
+  myindie: "bg-primary-violet hover:bg-primary-violet/80 text-brand-white",
+  blog: "bg-brand-light hover:bg-brand-light/80 text-brand-white"
+};
+
+const directionClass = direction === 'row' ? 'flex-row flex-wrap' : 'flex-col';
+const containerClass = `flex ${directionClass} gap-3 ${direction === 'row' ? '' : 'w-full'}`;
+---
+
+{links && (
+  <div class={containerClass}>
+    {links.github && (
+      <a 
+        href={links.github} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class={`${buttonBaseClass} ${buttonColors.github}`}
+      >
+        <Icon name="mdi:github" class="w-5 h-5 md:w-6 md:h-6" />
+        GitHub
+      </a>
+    )}
+    
+    {links.itch && (
+      <a 
+        href={links.itch} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class={`${buttonBaseClass} ${buttonColors.itch}`}
+      >
+        <Icon name="simple-icons:itchdotio" class="w-5 h-5 md:w-6 md:h-6" />
+        Play on Itch.io
+      </a>
+    )}
+    
+    {links.myindie && currentLang === 'ru' && (
+      <a 
+        href={links.myindie} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class={`${buttonBaseClass} ${buttonColors.myindie}`}
+      >
+        <img src={`${base}images/icons/logo_myindie.svg`} alt="MyIndie" class="w-5 h-5 md:w-6 md:h-6 object-contain" />
+        Play on MyIndie
+      </a>
+    )}
+
+    {/* Кнопка блога */}
+    {showBlog && blogUrl && (
+      <a 
+        href={blogUrl}
+        class={`${buttonBaseClass} ${buttonColors.blog}`}
+      >
+        <Icon name="mdi:book-open-page-variant" class="w-5 h-5 md:w-6 md:h-6" />
+        Learn more
+      </a>
+    )}
+  </div>
+)}
