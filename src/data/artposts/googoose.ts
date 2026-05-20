@@ -24,13 +24,6 @@ export const googoosePost: ArtPost = {
     Вы отправляетесь в захватывающее приключение по различным мирам, в которых вам предстоит cразиться со злом и спасти своих друзей. Собирайте цветы, чтобы Гу-Гусь увеличивался и преодолевал сложные препятствия. Распадайтесь на маленьких Гу-Гусят, чтобы решать головоломки!
     </p>
 
-    <h2>Особенности:</h2>
-    <ul>
-      <li>Мягкая физика персонажа</li>
-      <li>Кастомизация гусиков</li>
-      <li>Система способностей и разные миры</li>
-      <li>Боссы</li>
-    </ul>
     <p>
     За развитием проекта можно следить в тг-канале: 
     <a href="https://t.me/googoosegame" class="text-primary hover:text-primary/80 underline">Goo-Goose</a>
@@ -45,31 +38,19 @@ export const googoosePost: ArtPost = {
     Основная моя работа - создавать визуальное оформление для разных уровней (миров - локаций). Я отвечаю в первую очередь за все ассеты связанные с визуалом уровней.
     </p>
     <ul>
-      <li>Поиск референсов по заданному описанию,настроению и желаемых ощущений от уровня</li>
-      <li>Поиск цветовых решений - палитры уровня</li>
+      <li>Поиск референсов по заданному описанию,настроению. Поиск цветовых решений - палитры уровня</li>
       <li>Определение необходимых текстур, спрайтов для оформления уровня.</li>
-      <li>Определение нужных разрешений для изображений и непосредственно рисование всех ассетов</li>
-      <li>Импорт подготовленных файлов в Unity. Настройки импорта, расположение файлов в проекте</li>
-      <li>Настройка спрайт-атласов</li>
+      <li>Рисование всех ассетов</li>
+      <li>Импорт подготовленных файлов в Unity. Настройки импорта и подготовка спрайт-атласов</li>
       <li>Создание префабов, настройка компонент (коллизии, эффекты и тд) и размещение объектов в сцене уровня (сам уровень не создаю)</li>
       <li>Настройка слоев сортировки и дебаг рендеринга (draw calls, batching, ...)</li>
       <li>Тестирование визуала во время игры (в игре камера может менять zoom)</li>
-      <li>Если всё хорошо или нужно обсудить с командой - заливаю на GitHub</li>
     </ul>
      <p>
-    В общем, превращаю уровни в приятные глазу локации
+    В общем, превращаю уровни в приятные глазу локации. Ниже результат моей работы по уровням :)
     </p>
 
-    <div class="max-w-4xl mx-auto mt-4">
 
-        <h1>Сравнение работы</h1>
-
-        <img-comparison-slider>
-          <img slot="first" src="${base}images/gutsout/screenshots/screenshot1.webp" />
-          <img slot="second" src="${base}images/gutsout/screenshots/screenshot2.webp" />
-        </img-comparison-slider>
-
-      </div>
 
 
 
@@ -80,16 +61,47 @@ export const googoosePost: ArtPost = {
     </summary>
     <div class="dev-content">
 
+        <p>
+        Туториал - первое знакомство игрока с игрой.
+        Это должно быть утреннее доброе настроение и предвкушение приключений.
+        Высокая трава должна давать ощущение маленькости - мы только появились в этом мире.
+        Цвета яркие, теплые, природные и мягкие.
+        </p>
+
+        <div class="max-w-4xl mx-auto mt-4">
+
+        <h1>Сравнение до/после</h1>
+
+        <img-comparison-slider>
+          <img slot="first" src="${base}images/googoose/beforeafter/beforeafter100.webp" />
+          <img slot="second" src="${base}images/googoose/beforeafter/beforeafter101.webp" />
+        </img-comparison-slider>
+        <p>Основной референс - пейзажи Хаяо Миядзаки</p>
+
+        <img-comparison-slider>
+          <img slot="first" src="${base}images/googoose/beforeafter/beforeafter110.webp" />
+          <img slot="second" src="${base}images/googoose/beforeafter/beforeafter111.webp" />
+        </img-comparison-slider>
+        <p>По локации разбросаны руины лаборатории</p>
+
+        <img-comparison-slider>
+          <img slot="first" src="${base}images/googoose/beforeafter/beforeafter120.webp" />
+          <img slot="second" src="${base}images/googoose/beforeafter/beforeafter121.webp" />
+        </img-comparison-slider>
+        <p>В конце уровня приходим в гусиную деревню</p>
+        <p>Домики на холмах вдохновлены Чжанцзяцзе - национальный парк в Китае</p>
+
+      </div>
+
        <details class="dev-details">
         <summary class="dev-summary">
-          Референсы:
+          Поиск решений:
           <span class="arrow">▼</span>
         </summary>
         <div class="dev-content">
 
-          <p>Основной референс - пейзажи Хаяо Миядзаки</p>
-           <img src="/portfolio/images/googoose/tutorial_ref.webp" alt="Основной референс на Туториал" class="rounded-xl my-4" />
-           <p>Домики на холмах вдохновлены Чжанцзяцзе - национальный парк в Китае</p>
+          
+           
         </div>
       </details>
 
@@ -99,28 +111,12 @@ export const googoosePost: ArtPost = {
           <span class="arrow">▼</span>
         </summary>
         <div class="dev-content">
-          <p>Текстуры, спрайты и так далее</p>
-        </div>
-      </details>
+          <p>
+          Большая чать ассетов на новых оформленных уровнях - ч/б спрайты и текстуры. 
+          В ходе своей работы старалась минимизировать кол-во ассетов и максимально переиспользовать существующие. 
+          Поэтому многие элементы - составные и цвет задается через менеджер палитр.
+          </p>
 
-      <details class="dev-details">
-        <summary class="dev-summary">
-          Оформление:
-          <span class="arrow">▼</span>
-        </summary>
-        <div class="dev-content">
-          <p>Как выглядит уровень и как несколько раскрашенных спрайтов меняют восприятие</p>
-        </div>
-      </details>
-
-
-      <details class="dev-details">
-        <summary class="dev-summary">
-          Результат:
-          <span class="arrow">▼</span>
-        </summary>
-        <div class="dev-content">
-          <p>Гиф ито8гового уровня. Отзывы и впечатления</p>
         </div>
       </details>
 
@@ -135,6 +131,52 @@ export const googoosePost: ArtPost = {
     </summary>
     <div class="dev-content">
 
+     <div class="dev-content">
+
+        <p>
+        Дикий запад - первый полноценный уровень.
+        Сам уровень делится на подзоны: поверхность, пещеры и древние руины.
+        </p>
+
+        <div class="max-w-4xl mx-auto mt-4">
+
+        <h1>Сравнение до/после</h1>
+        <p>
+        Конфигурацию уровня полностью переработали - поэтому изображения до/после не соответствуют.
+        </p>
+
+        <div class="flex flex-wrap gap-4 my-4">
+          <div class="flex-1 min-w-[200px]">
+            <img src="${base}images/googoose/beforeafter/beforeafter200.webp" class="rounded-xl w-full" />
+          </div>
+          <div class="flex-1 min-w-[200px]">
+            <img src="${base}images/googoose/beforeafter/beforeafter201.webp" class="rounded-xl w-full" />
+          </div>
+        </div>
+        <p>Место подбора первой способности - лассо. Сделано более выразительным и уникальным. Игрок подбирает лассо в древних руинах дикого запада</p>
+
+        <div class="flex flex-wrap gap-4 my-4">
+          <div class="flex-1 min-w-[200px]">
+            <img src="${base}images/googoose/beforeafter/beforeafter210.webp" class="rounded-xl w-full" />
+          </div>
+          <div class="flex-1 min-w-[200px]">
+            <img src="${base}images/googoose/beforeafter/beforeafter211.webp" class="rounded-xl w-full" />
+          </div>
+        </div>
+        <p>Пещеры</p>
+
+        <div class="flex flex-wrap gap-4 my-4">
+          <div class="flex-1 min-w-[200px]">
+            <img src="${base}images/googoose/beforeafter/beforeafter220.webp" class="rounded-xl w-full" />
+          </div>
+          <div class="flex-1 min-w-[200px]">
+            <img src="${base}images/googoose/beforeafter/beforeafter221.webp" class="rounded-xl w-full" />
+          </div>
+        </div>
+        <p>Окончание уровня. Вместо финиша теперь гусиный идол с порталом</p>
+
+      </div>
+
        <details class="dev-details">
         <summary class="dev-summary">
           Референсы и палитра:
@@ -143,10 +185,10 @@ export const googoosePost: ArtPost = {
         <div class="dev-content">
              <h2>Референсы:</h2>
                 <p>Ну с референсами тут всё понятно</p>
-                <img src="/portfolio/images/googoose/tutorial_ref.webp" alt="Основной референс на Туториал" class="rounded-xl my-4" />
+                
              <h2>Подбор палитры:</h2>
                 <p>Останговились на более холодных оттенках</p>
-                <img src="/portfolio/images/googoose/tutorial_ref.webp" alt="Основной референс на Туториал" class="rounded-xl my-4" />
+                
          
         </div>
       </details>
@@ -161,26 +203,6 @@ export const googoosePost: ArtPost = {
         </div>
       </details>
 
-      <details class="dev-details">
-        <summary class="dev-summary">
-          Оформление:
-          <span class="arrow">▼</span>
-        </summary>
-        <div class="dev-content">
-          <p>Как выглядит уровень и как несколько раскрашенных спрайтов меняют восприятие</p>
-        </div>
-      </details>
-
-
-      <details class="dev-details">
-        <summary class="dev-summary">
-          Результат:
-          <span class="arrow">▼</span>
-        </summary>
-        <div class="dev-content">
-          <p>Гиф ито8гового уровня. Отзывы и впечатления</p>
-        </div>
-      </details>
 
     </div>
   </details>
@@ -188,61 +210,29 @@ export const googoosePost: ArtPost = {
 
 
     <details class="dev-details">
-    <summary class="dev-summary">
-      Дикий запад - уровень 2 (шахты)
-      <span class="arrow">▼</span>
-    </summary>
-    <div class="dev-content">
+      <summary class="dev-summary">
+        Дикий запад - уровень 2 (шахты)
+        <span class="arrow">▼</span>
+      </summary>
+      <div class="dev-content">
+        <p>
+          Шахты дикого запада. На этом уровне появятся первые враги и новые механики
+        </p>
 
-       <details class="dev-details">
-        <summary class="dev-summary">
-          Референсы и палитра:
-          <span class="arrow">▼</span>
-        </summary>
-        <div class="dev-content">
-             <h2>Референсы:</h2>
-                <p>Ну с референсами тут всё понятно</p>
-                <img src="/portfolio/images/googoose/tutorial_ref.webp" alt="Основной референс на Туториал" class="rounded-xl my-4" />
-             <h2>Подбор палитры:</h2>
-                <p>Останговились на более холодных оттенках</p>
-                <img src="/portfolio/images/googoose/tutorial_ref.webp" alt="Основной референс на Туториал" class="rounded-xl my-4" />
+        <h2>Ассеты к шахтам</h2>
 
+        <div class="flex flex-wrap gap-4 my-4">
+          <div class="flex-1 min-w-[200px]">
+            <img src="${base}images/googoose/beforeafter/beforeafter31.webp" alt="Общая сцена" class="rounded-xl w-full" />
+          </div>
+          <div class="flex-1 min-w-[200px]">
+            <img src="${base}images/googoose/beforeafter/beforeafter32.webp" alt="Динамиты и декор" class="rounded-xl w-full" />
+          </div>
         </div>
-      </details>
 
-      <details class="dev-details">
-        <summary class="dev-summary">
-          Ассеты:
-          <span class="arrow">▼</span>
-        </summary>
-        <div class="dev-content">
-          <p>Текстуры, спрайты и так далее</p>
-        </div>
-      </details>
-
-      <details class="dev-details">
-        <summary class="dev-summary">
-          Оформление:
-          <span class="arrow">▼</span>
-        </summary>
-        <div class="dev-content">
-          <p>Как выглядит уровень и как несколько раскрашенных спрайтов меняют восприятие</p>
-        </div>
-      </details>
-
-
-      <details class="dev-details">
-        <summary class="dev-summary">
-          Результат:
-          <span class="arrow">▼</span>
-        </summary>
-        <div class="dev-content">
-          <p>Гиф ито8гового уровня. Отзывы и впечатления</p>
-        </div>
-      </details>
-
-    </div>
-  </details>
+        <p>Превью сцены с разрабатываемыми ассетами для нового уровня.</p>
+      </div>
+    </details>
 
 
     </details>
@@ -273,6 +263,17 @@ export const googoosePost: ArtPost = {
              
         </div>
       </details>
+
+      <details class="dev-details">
+        <summary class="dev-summary">
+          Концепты:
+          <span class="arrow">▼</span>
+        </summary>
+        <div class="dev-content">
+             
+        </div>
+      </details>
+
 
     </div>
   </details>
