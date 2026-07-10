@@ -3,6 +3,7 @@ import { aceagePost } from './aceage';
 import { gutsoutPost } from './gutsout';
 import { tanglejumpPost } from './tanglejump';
 import { runpunzelPost } from './runpunzel';
+import { uhohPost } from './uhoh';
 
 export interface Post {
   slug: string;
@@ -18,6 +19,7 @@ export interface Post {
 }
 
 export const posts: Post[] = [
+  uhohPost,
   aceagePost,
   gutsoutPost,
   tanglejumpPost,
