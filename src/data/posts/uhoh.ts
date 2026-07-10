@@ -110,12 +110,14 @@ export const uhohPost: Post = {
     `,
 
 
-    image: `${base}images/tanglejump/TangleJump_banner.webp`,
+    image: `${base}images/uhoh/Uhoh.webp`,
 
     screenshots: [
-        `${base}images/tanglejump/screenshots/screenshot1.webp`,
-	`${base}images/tanglejump/screenshots/screenshot2.webp`,
+        `${base}images/uhoh/screenshots/screenshot1.webp`,
+        `${base}images/uhoh/screenshots/screenshot2.webp`,
+        `${base}images/uhoh/screenshots/screenshot3.webp`,
+        `${base}images/uhoh/screenshots/screenshot4.webp`,
     ],
 
-    projectSlug: 'tanglejump'
+    projectSlug: 'uhoh'
   };

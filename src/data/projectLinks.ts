@@ -12,6 +12,12 @@ export interface ProjectLinks {
 export const projectLinks: ProjectLinks[] = [
     {
         slug: 'aceage',
+        //github: 'https://github.com/PureshkaGames/AceAge',
+        //itch: 'https://clinicallysleepy.itch.io/ace-age',
+        myindie: 'https://myindie.ru/games/game/ne-ssy_6v1',
+    },
+    {
+        slug: 'aceage',
         github: 'https://github.com/PureshkaGames/AceAge',
         itch: 'https://clinicallysleepy.itch.io/ace-age',
     },
