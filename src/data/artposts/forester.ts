@@ -142,7 +142,7 @@ export const foresterPost: ArtPost = {
       <span class="arrow">▼</span>
     </summary>
     <div class="dev-content">
-      <p>Приминение ассетов. Но не всех - после отого как раз и нарисовала спрайт стены</p>
+      <p>Ассеты в игровой локации</p>
       <img src="/portfolio/images/forester/forester_map.webp" alt="Ассеты игры" class="rounded-xl my-4" />
     </div>
   </details>

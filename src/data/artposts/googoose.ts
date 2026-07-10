@@ -18,7 +18,7 @@ export const googoosePost: ArtPost = {
     <h2>Об игре</h2>
     <p>
     <a href="https://www.rustore.ru/catalog/app/com.IvaMarin.GooGoose" class="text-primary hover:text-primary/80 underline">Goo-Goose</a>.
-    — это уникальный гусиный 2D-платформер с мягкой физикой!
+    — это гусиный 2D-платформер с мягкой физикой!
     </p>
     <p>
     Вы отправляетесь в захватывающее приключение по различным мирам, в которых вам предстоит cразиться со злом и спасти своих друзей. Собирайте цветы, чтобы Гу-Гусь увеличивался и преодолевал сложные препятствия. Распадайтесь на маленьких Гу-Гусят, чтобы решать головоломки!
@@ -35,22 +35,13 @@ export const googoosePost: ArtPost = {
 
     <h2>Моя роль на проекте:</h2>
     <p>
-    Основная моя работа - создавать визуальное оформление для разных уровней (миров - локаций). Я отвечаю в первую очередь за все ассеты связанные с визуалом уровней.
-    </p>
-    <ul>
-      <li>Поиск референсов по заданному описанию,настроению. Поиск цветовых решений - палитры уровня</li>
-      <li>Определение необходимых текстур, спрайтов для оформления уровня.</li>
-      <li>Рисование всех ассетов</li>
-      <li>Импорт подготовленных файлов в Unity. Настройки импорта и подготовка спрайт-атласов</li>
-      <li>Создание префабов, настройка компонент (коллизии, эффекты и тд) и размещение объектов в сцене уровня (сам уровень не создаю)</li>
-      <li>Настройка слоев сортировки и дебаг рендеринга (draw calls, batching, ...)</li>
-      <li>Тестирование визуала во время игры (в игре камера может менять zoom)</li>
-    </ul>
-     <p>
+    Основная моя работа - создавать визуальное оформление для разных уровней (миров - локаций). Если кратко, то мои задачи покрывают полный пайплайн оформления локаций (от поисков референсов и рисования. И до оформления сцен и оптимизации рендеринга)
     В общем, превращаю уровни в приятные глазу локации. Ниже результат моей работы по уровням :)
     </p>
 
-
+    <p>
+    Также подготавливаю концепты и оформлдение для других аспектов игры (магазин, оформление меню).
+    </p>
 
 
 
@@ -77,13 +68,13 @@ export const googoosePost: ArtPost = {
           <img slot="second" src="${base}images/googoose/beforeafter/beforeafter101.webp" />
         </img-comparison-slider>
         <p>Основной референс - пейзажи Хаяо Миядзаки</p>
-
+        <p></p>
         <img-comparison-slider>
           <img slot="first" src="${base}images/googoose/beforeafter/beforeafter110.webp" />
           <img slot="second" src="${base}images/googoose/beforeafter/beforeafter111.webp" />
         </img-comparison-slider>
         <p>По локации разбросаны руины лаборатории</p>
-
+        <p></p>
         <img-comparison-slider>
           <img slot="first" src="${base}images/googoose/beforeafter/beforeafter120.webp" />
           <img slot="second" src="${base}images/googoose/beforeafter/beforeafter121.webp" />
@@ -92,15 +83,6 @@ export const googoosePost: ArtPost = {
         <p>Домики на холмах вдохновлены Чжанцзяцзе - национальный парк в Китае</p>
 
       </div>
-
-       <details class="dev-details">
-        <summary class="dev-summary">
-          Поиск решений:
-          <span class="arrow">▼</span>
-        </summary>
-        <div class="dev-content">
-
-          
            
         </div>
       </details>
@@ -154,6 +136,7 @@ export const googoosePost: ArtPost = {
           </div>
         </div>
         <p>Место подбора первой способности - лассо. Сделано более выразительным и уникальным. Игрок подбирает лассо в древних руинах дикого запада</p>
+        <p></p>
 
         <div class="flex flex-wrap gap-4 my-4">
           <div class="flex-1 min-w-[200px]">
@@ -164,6 +147,7 @@ export const googoosePost: ArtPost = {
           </div>
         </div>
         <p>Пещеры</p>
+        <p></p>
 
         <div class="flex flex-wrap gap-4 my-4">
           <div class="flex-1 min-w-[200px]">
@@ -176,33 +160,6 @@ export const googoosePost: ArtPost = {
         <p>Окончание уровня. Вместо финиша теперь гусиный идол с порталом</p>
 
       </div>
-
-       <details class="dev-details">
-        <summary class="dev-summary">
-          Референсы и палитра:
-          <span class="arrow">▼</span>
-        </summary>
-        <div class="dev-content">
-             <h2>Референсы:</h2>
-                <p>Ну с референсами тут всё понятно</p>
-                
-             <h2>Подбор палитры:</h2>
-                <p>Останговились на более холодных оттенках</p>
-                
-         
-        </div>
-      </details>
-
-      <details class="dev-details">
-        <summary class="dev-summary">
-          Ассеты:
-          <span class="arrow">▼</span>
-        </summary>
-        <div class="dev-content">
-          <p>Текстуры, спрайты и так далее</p>
-        </div>
-      </details>
-
 
     </div>
   </details>
@@ -236,44 +193,6 @@ export const googoosePost: ArtPost = {
 
 
     </details>
-
-    <details class="dev-details">
-    <summary class="dev-summary">
-      Другое
-      <span class="arrow">▼</span>
-    </summary>
-    <div class="dev-content">
-
-       <details class="dev-details">
-        <summary class="dev-summary">
-          NPC:
-          <span class="arrow">▼</span>
-        </summary>
-        <div class="dev-content">
-             <h2>Дикий запад:</h2>
-        </div>
-      </details>
-
-      <details class="dev-details">
-        <summary class="dev-summary">
-          Иконки способностей:
-          <span class="arrow">▼</span>
-        </summary>
-        <div class="dev-content">
-             
-        </div>
-      </details>
-
-      <details class="dev-details">
-        <summary class="dev-summary">
-          Концепты:
-          <span class="arrow">▼</span>
-        </summary>
-        <div class="dev-content">
-             
-        </div>
-      </details>
-
 
     </div>
   </details>
