@@ -83,9 +83,6 @@ export const googoosePost: ArtPost = {
         <p>Домики на холмах вдохновлены Чжанцзяцзе - национальный парк в Китае</p>
 
       </div>
-           
-        </div>
-      </details>
 
       <details class="dev-details">
         <summary class="dev-summary">
